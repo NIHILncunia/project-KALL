@@ -97,10 +97,11 @@
                 <a href="#none">180일</a>
               </span>
 
-              <input type="date" id="s_history_date" name="history_date" size="10" value="today">
+              <input type="date" id="s_history_date" name="history_date" size="10">
               <strong>~</strong>
-              <input type="date" id="e_history_date" name="history_date" size="10" readonly value="today">
+              <input type="date" id="e_history_date" name="history_date" size="10" readonly>
               <a href="#none" id="ordersearch">조회</a>
+              <script src="../scripts/getDate.js"></script>
             </div>
 
             <ul>
@@ -145,7 +146,30 @@
         <p class="message">주문 내역이 없습니다.</p>
       </div>
 
-      <div class="pagemove">
+      <div class="pagination">
+        <a href="#" class="first">
+          <span class="visually-hidden">첫 페이지</span>
+          <i class="fas fa-angle-double-left"></i>
+        </a>
+        <a href="#" class="prev">
+          <span class="visually-hidden">이전 페이지</span>
+          <i class="fas fa-angle-left"></i>
+        </a>
+        <a href="#" class="number" data-current="true">
+          <span class="visually-hidden">1 페이지</span>
+          1
+        </a>
+        <a href="#" class="next">
+          <span class="visually-hidden">다음 페이지</span>
+          <i class="fas fa-angle-right"></i>
+        </a>
+        <a href="#" class="last">
+          <span class="visually-hidden">마지막 페이지</span>
+          <i class="fas fa-angle-double-right"></i>
+        </a>
+      </div>
+
+      <!-- <div class="pagemove">
         <a href="첫페이지로">
           <img src="/image/day/첫페이지.png" alt="첫페이지">
         </a>
@@ -159,7 +183,7 @@
         </ol>
         <a href="다음페이지로"><img src="/image/day/다음.png" alt="다음페이지"></a>
         <a href="끝페이지로"><img src="/image/day/끝으로.png" alt="끝페이지"></a>
-      </div>
+      </div> -->
 
       </fieldset>
 

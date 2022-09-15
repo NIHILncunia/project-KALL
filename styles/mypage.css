@@ -73,7 +73,7 @@ main>h2 {
 
 
 /* mmmmmmmmmmm하단 페이지 이동버튼mmmmmmmmmmmmmmmmmmm */
-.pagemove {
+/* .pagemove {
   display: flex;
   justify-content: center;
 }
@@ -85,6 +85,46 @@ main>h2 {
 
 .pagemove>a>img {
   width: 20px;
+} */
+
+div.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+div.pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  padding: 5px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 35px;
+}
+
+div.pagination a:hover,
+div.pagination a[data-current="true"] {
+  background-color: var(--c-point-h);
+  color: #ffffff;
+}
+
+div.pagination a.prev {
+  margin-right: 10px;
+}
+
+div.pagination a.next {
+  margin-left: 10px;
+}
+
+div.pagination a.first {
+  margin-right: 5px;
+}
+
+div.pagination a.last {
+  margin-left: 5px;
 }
 
 /* mmmmmmmmmmm하단 페이지 이동버튼mmmmmmmmmmmmmmmmmmm */
