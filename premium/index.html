@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/product.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <title>상품 리스트 | KALL</title>
+  <!-- 레이아웃이 중복되는 페이지들은 이미지와 링크, 페이지 제목만 바꿔주면 됨. -->
+</head>
+
+<body>
+  <header>
+    <h1 class="title-logo">
+      <span>KALL</span>
+      <a href="../index.html">
+        <img src="../images/kall-logo.png" alt="KALL 로고">
+      </a>
+    </h1>
+
+    <nav>
+      <ul class="main-nav">
+        <li>
+          <a href="../product/">주문제작</a>
+        </li>
+        <li>
+          <a href="../premium/">프리미엄</a>
+        </li>
+        <li>
+          <a href="../etc/">ETC</a>
+        </li>
+        <li>
+          <a href="../community/guide/">커뮤니티</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="user-menu">
+      <li>
+        <a href="../sighin/" title="로그인">
+          <span class="visually-hidden">로그인</span>
+          <i class="fas fa-key"></i>
+        </a>
+      </li>
+      <li>
+        <a href="../sighup/" title="회원가입">
+          <span class="visually-hidden">회원가입</span>
+          <i class="fas fa-user-plus"></i>
+        </a>
+      </li>
+      <li>
+        <a href="../cart/" title="장바구니">
+          <span class="visually-hidden">장바구니</span>
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- 수진 코드 야야ㅏ아아아아아아악간 수정함 -->
+    <h2>[메뉴이름] 상품 리스트</h2>
+
+    <div class="option-tags">
+      <details>
+        <summary>목록 설정 옵션</summary>
+
+        <p>아래의 태그들 중에서 원하는 태그들을 클릭하세요.</p>
+        <form>
+          <div class="tags">
+            <input class="tag" type="checkbox" name="tag" id="tag1" value="tag1" hidden>
+            <label for="tag1">#태그1</label>
+
+            <input class="tag" type="checkbox" name="tag" id="tag2" value="tag2" hidden>
+            <label for="tag2">#태그2</label>
+
+            <input class="tag" type="checkbox" name="tag" id="tag3" value="tag3" hidden>
+            <label for="tag3">#태그3</label>
+          </div>
+
+          <button type="reset">설정 취소</button>
+        </form>
+      </details>
+    </div>
+
+    <div class="item-list">
+      <div class="item">
+        <div class="item-image">
+          <a href="./item/new/item1.html">
+            <img src="../images/cakes/chcocake_.jpg" alt="초코 케이크">
+          </a>
+        </div>
+        <p class="item-name">
+          <a href="./item/new/item1.html"><strong>초코케이크 먹고 싶다</strong></a>
+        </p>
+        <p class="item-price">100원</p>
+        <p class="item-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span class="rating-number">(4.5)</span>
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <a href="#">상품 이미지</a>
+        </div>
+        <p class="item-name">
+          <a href="#"><strong>대충 이름</strong></a>
+        </p>
+        <p class="item-price">대충 가격</p>
+        <p class="item-rating">대충 평점</p>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <a href="#">상품 이미지</a>
+        </div>
+        <p class="item-name">
+          <a href="#"><strong>대충 이름</strong></a>
+        </p>
+        <p class="item-price">대충 가격</p>
+        <p class="item-rating">대충 평점</p>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <a href="#">상품 이미지</a>
+        </div>
+        <p class="item-name">
+          <a href="#"><strong>대충 이름</strong></a>
+        </p>
+        <p class="item-price">대충 가격</p>
+        <p class="item-rating">대충 평점</p>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <a href="#">상품 이미지</a>
+        </div>
+        <p class="item-name">
+          <a href="#"><strong>대충 이름</strong></a>
+        </p>
+        <p class="item-price">대충 가격</p>
+        <p class="item-rating">대충 평점</p>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <a href="#">상품 이미지</a>
+        </div>
+        <p class="item-name">
+          <a href="#"><strong>대충 이름</strong></a>
+        </p>
+        <p class="item-price">대충 가격</p>
+        <p class="item-rating">대충 평점</p>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <a href="#">상품 이미지</a>
+        </div>
+        <p class="item-name">
+          <a href="#"><strong>대충 이름</strong></a>
+        </p>
+        <p class="item-price">대충 가격</p>
+        <p class="item-rating">대충 평점</p>
+      </div>
+
+      <div class="item">
+        <div class="item-image">
+          <a href="#">상품 이미지</a>
+        </div>
+        <p class="item-name">
+          <a href="#"><strong>대충 이름</strong></a>
+        </p>
+        <p class="item-price">대충 가격</p>
+        <p class="item-rating">대충 평점</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="links">
+      <a href="../agreement/">이용약관</a>
+      <span>|</span><a href="../privacy">개인정보처리방침</a>
+      <span>|</span><a href="../community/guide/">고객센터</a>
+    </div>
+    <address class="site-address">
+      <p>
+        <small>
+          안내전화: 1588-9780
+          <span>|</span> 상호 : KALL
+        </small>
+      </p>
+    </address>
+    <div class="site-info">
+      <p>
+        <small>
+          사업장소재지 : 경기 성남시 분당구 돌마로 46 (광천빌딩 5층)
+        </small>
+      </p>
+      <p>
+        <small>
+          사업자등록번호 : 214-86-26812
+          <span>|</span> 대표이사: 김상곤
+        </small>
+      </p>
+      <p>
+        <small>
+          COPYRIGHT <i class="far fa-copyright"></i> KALL. ALL RIGHTS RESERVED.
+        </small>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

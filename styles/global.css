@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+:root {
+  scroll-behavior: smooth;
+  --c-base: #d7e6ff;
+  --c-point: #d7e6ff;
+  --c-point-h: #acccff;
+  --c-point-n: #e9f1ff;
+
+  --c-point2: #fdfcc8;
+  --c-point2-h: #b6b57a;
+  --c-point3: #fff0fd;
+  --c-point3-h: #f9daf5;
+  --c-link: #3897f5;
+  --c-link-h: #1a7bdc;
+
+  --white-f: #ffffff;
+  --white-e: #eeeeee;
+  --white-e5: #f9f9f9;
+  --black-2: #222222;
+  --black-3: #333333;
+  --black-5: #555555;
+  --black-6: #666666;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'nanumsquare', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}

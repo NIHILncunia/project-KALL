@@ -1,0 +1,124 @@
+/* ==================== 마이 페이지 ==================== */
+main {
+  color: var(--black-3);
+}
+
+main>h2 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.oderlist {
+  height: 23px;
+}
+
+/*mmmmmmmmmmmm날짜 버튼 크기mmmmmmmmmmmmm*/
+
+.orderlist a,
+#ordersearch {
+  display: inline-block;
+  text-align: center;
+  border: solid 1px;
+  width: 50px;
+  color: var(--black-3);
+}
+
+
+/*mmmmmmmmmmmm날짜 버튼 크기mmmmmmmmmmmmm*/
+/* mmmmmmmmmmmmmmmmm오더리스트mmmmmmmmmmmmmmm */
+
+.my_orderlist fieldset {
+  height: 300px;
+}
+
+.oderlist_date {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.oderlist_date>* {
+  margin: 10px;
+}
+
+.my_orderlist ul li {
+  text-align: center;
+}
+
+/* mmmmmmmmmmmmmmmmm오더리스트mmmmmmmmmmmmmmm */
+/* mmmmmmmmmm내역조회/취소/반품/교환mmmmmmmmmmm */
+.my_menu>ul>li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.my_menu>ul {
+  text-align: center;
+  background-color: var(--c-point);
+  margin-bottom: 10px;
+}
+
+.my_menu ul>li>a {
+  color: var(--black-3);
+}
+
+/* mmmmmmmmmm내역조회/취소/반품/교환mmmmmmmmmmm */
+
+
+
+
+/* mmmmmmmmmmm하단 페이지 이동버튼mmmmmmmmmmmmmmmmmmm */
+.pagemove {
+  display: flex;
+  justify-content: center;
+}
+
+.pagemove>ol>li>a {
+  color: black;
+  font-weight: bold;
+}
+
+.pagemove>a>img {
+  width: 20px;
+}
+
+/* mmmmmmmmmmm하단 페이지 이동버튼mmmmmmmmmmmmmmmmmmm */
+
+/* mmmmmmmmmm주문상품정보창mmmmmmmmmmm */
+
+
+
+.my_orderpage {
+  margin: 30px 0;
+  border: solid 1px;
+  /* display: flex; */
+  text-align: center;
+}
+
+.my_orderpage>table {
+  width: 100%;
+  background-color: rgb(215, 230, 255);
+}
+
+.my_orderpage {
+  color: black;
+}
+
+.my_orderpage h3,
+.my_orderpage caption {
+  display: none;
+}
+
+.my_orderpage colgroup col:nth-child(3) {
+  width: 40%;
+}
+
+.message {
+  height: 200px;
+  line-height: 200px;
+}

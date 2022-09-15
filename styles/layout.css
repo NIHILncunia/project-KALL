@@ -1,0 +1,147 @@
+/* ==================== 헤더 ==================== */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+  padding: 40px 10px;
+  /* background-color: var(--c-base); */
+  background-color: var(--c-point-h);
+}
+
+.title-logo span {
+  display: inline-block;
+  text-indent: -9999em;
+}
+
+.title-logo img {
+  margin-left: 40px;
+  width: 120px;
+}
+
+.user-menu {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 40px;
+}
+
+.user-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.user-menu li a:hover {
+  border: 2px solid var(--c-point3);
+  color: var(--c-point3);
+}
+
+/* ==================== 헤더 종료 ==================== */
+
+/* ==================== 메뉴 ==================== */
+nav {
+  flex: 1 0;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav li {
+  flex-basis: 150px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.main-nav>li a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 5px dotted #ffffff;
+}
+
+.main-nav>li a:hover {
+  border-bottom-style: solid;
+}
+
+/* ==================== 메뉴 종료 ==================== */
+
+/* ==================== 메인 ==================== */
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* ==================== 메인 종료 ==================== */
+
+/* ==================== 푸터 ==================== */
+
+footer {
+  margin-top: 50px;
+  background-color: var(--black-3);
+  color: var(--white-e);
+  text-align: center;
+  padding: 10px;
+}
+
+footer .links {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links a {
+  color: var(--c-link);
+}
+
+footer .links a:hover {
+  color: var(--c-link-h);
+  text-decoration: underline;
+}
+
+footer .links span,
+footer span {
+  margin: 0 5px;
+}
+
+footer .site-address {
+  margin-bottom: 5px;
+  font-style: normal;
+}
+
+footer .site-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .site-info p:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+footer .site-info p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+/* ==================== 푸터 종료 ==================== */
