@@ -213,6 +213,26 @@ main .sc-container {
   border: 0;
 }
 
+/* lsj 추가 _ 문의 내용에 대한 추가 사항 */
+.sc-container>section p strong {
+  font-weight: bold;
+}
+
+.sc-container>section>p:first-of-type>strong:nth-of-type(2),
+.sc-container>section>p:nth-of-type(2)>strong:nth-of-type(2),
+.sc-container>section>p:nth-of-type(3)>strong:nth-of-type(2),
+.sc-container>section>p:nth-of-type(4)>strong:nth-of-type(2) {
+  color: red;
+}
+
+.sc-container>section>p:first-of-type>strong:nth-of-type(1),
+.sc-container>section>p:nth-of-type(2)>strong:nth-of-type(1),
+.sc-container>section>p:nth-of-type(3)>strong:nth-of-type(1),
+.sc-container>section>p:nth-of-type(4)>strong:nth-of-type(1) {
+  color: blue;
+}
+
+
 /* ==================== 찾아오는 길 ==================== */
 div.visit-map {
   margin-bottom: 50px;
