@@ -499,3 +499,48 @@ div.description-grid div.grid-content {
   padding: 10px;
   background-color: var(--white-e5);
 }
+
+/* ==================== 상품 수량 ==================== */
+div.count-bar {
+  display: grid;
+  grid-template-columns: 1fr 170px .5fr;
+  align-items: center;
+}
+
+div.count-custom {
+  display: grid;
+  grid-template-columns: 150px 20px;
+  grid-template-rows: 20px 20px;
+}
+
+div.count-custom input {
+  all: unset;
+  background-color: var(--white-e5);
+  color: var(--black-3);
+  grid-row: 1 / -1;
+  padding: 10px;
+}
+
+div.count-custom button {
+  all: unset;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  text-align: center;
+  cursor: pointer;
+}
+
+div.count-custom button:hover {
+  background-color: var(--c-point-h);
+  color: #ffffff;
+}
+
+div.count-price {
+  text-align: right;
+}
+
+/* div.count-custom button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+} */

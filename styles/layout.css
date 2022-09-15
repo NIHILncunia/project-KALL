@@ -6,7 +6,6 @@ header {
   justify-content: center;
   margin-bottom: 75px;
   padding: 40px 10px;
-  /* background-color: var(--c-base); */
   background-color: var(--c-point-h);
 }
 
@@ -47,11 +46,28 @@ header {
   color: var(--c-point3);
 }
 
+/* ==================== 검색바 ==================== */
+header input {
+  all: unset;
+  background-color: var(--white-e5);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-right: 30px;
+  border-radius: 25px;
+  width: 250px;
+  background-image: url(../images/magnifying-glass-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 25px 25px;
+  box-sizing: border-box;
+}
+
 /* ==================== 헤더 종료 ==================== */
 
 /* ==================== 메뉴 ==================== */
 nav {
   flex: 1 0;
+  margin-left: 300px;
 }
 
 .main-nav {

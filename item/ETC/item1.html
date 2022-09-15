@@ -125,84 +125,17 @@
           <p class="price">15,000원</p>
           <p class="shipping-price">배송비<span>5000원</span></p>
 
-          <!-- 옵션은 좀 더 살펴보도록 하자. -->
-          <!-- 라디오 버튼 형식 -->
+          <div class="count-bar">
+            <div>상품 이름</div>
 
-          <div class="select radio item-color">
-            <p>시트</p>
-            <input type="radio" name="sheet" id="sheet1" value="white" hidden>
-            <label for="sheet1">일반</label>
-
-            <input type="radio" name="sheet" id="sheet2" value="red" hidden>
-            <label for="sheet2">레드벨벳</label>
-
-            <input type="radio" name="sheet" id="sheet3" value="blueberry" hidden>
-            <label for="sheet3">블루베리</label>
-          </div>
-
-          <div class="select radio item-shape">
-            <p>모양</p>
-            <input type="radio" name="shape" id="shape1" value="round" hidden>
-            <label for="shape1">원형</label>
-
-            <input type="radio" name="shape" id="shape2" value="rectangle" hidden>
-            <label for="shape2">사각형</label>
-
-            <input type="radio" name="shape" id="shape3" value="triangle" hidden>
-            <label for="shape3">하트</label>
-          </div>
-
-          <div class="select radio item-color">
-            <p>크림</p>
-            <input type="radio" name="color" id="color1" value="white" hidden>
-            <label for="color1">크림색</label>
-
-            <input type="radio" name="color" id="color2" value="red" hidden>
-            <label for="color2">빨간색</label>
-
-            <input type="radio" name="color" id="color3" value="choco" hidden>
-            <label for="color3">초코색</label>
-
-            <!-- <input type="radio" name="color" id="color4" value="black" hidden>
-            <label for="color4"></label> -->
-          </div>
-
-          <div class="select item-lettering">
-            <label for="lettering">원하는 문구를 입력하세요.</label>
-            <input type="text" name="lettering" id="lettering">
-          </div>
-
-          <div class="select file item-image">
-            <p>이미지 업로드</p>
-            <input type="file" name="image" id="image" accept="image/*" hidden>
-            <input type="text" readonly>
-            <label for="image">파일 찾기</label>
-          </div>
-
-          <div class="option-complete">
-            <button>선택 완료</button>
-          </div>
-
-          <!-- 위에서 옵션을 선택한 후에 선택 완료 버튼을 누르면 -->
-          <!-- 아래의 리스트에 차곡 차곡 쌓이는 시스템? -->
-          <p class="seleted-item">선택된 상품 총 2개</p>
-          <div class="items">
-            <div class="item">상품 이름 - 검은색, 원형 / 1개</div>
-            <div class="item">상품 이름 - 빨간색, 사각형 / 1개</div>
-          </div>
-
-          <!-- 단품일 때 수량 고를 수 있게 하기 -->
-          <!-- <div class="count">
-            <div class="minus">
-              <span class="visually-hidden">수량 빼기</span>
-              <i class="fas fa-minus"></i>
+            <div class="count-custom">
+              <input type="text" value="1" name="count">
+              <button class="plus" type="button">+</button>
+              <button class="minus" type="button">-</button>
             </div>
-            <div class="number">1</div>
-            <div class="plus">
-              <span class="visually-hidden">수량 더하기</span>
-              <i class="fas fa-plus"></i>
-            </div>
-          </div> -->
+
+            <div class="count-price">가격</div>
+          </div>
 
           <div class="buttons">
             <button>장바구니</button>
