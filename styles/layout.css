@@ -161,3 +161,12 @@ footer .site-info p:nth-child(2) {
 }
 
 /* ==================== 푸터 종료 ==================== */
+
+/* ==================== 패스워드 폰트 변경 ==================== */
+input[type="password"] {
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+input[type="password"]::placeholder {
+  font-family: 'nanumsquare', sans-serif;
+}

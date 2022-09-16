@@ -26,6 +26,8 @@ main div.option-tags summary {
   background-color: var(--white-e5);
   padding: 10px;
   cursor: pointer;
+  /* ==================== NOTE: 임시로 숨겨둠 ==================== */
+  display: none;
 }
 
 main div.option-tags summary::after {
@@ -139,4 +141,24 @@ main div.option-tags button:hover {
 
 .item .item-rating .rating-number {
   color: var(--black-3);
+}
+
+/* ==================== 정렬 필터 ==================== */
+div.align-filter {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+div.align-filter button {
+  all: unset;
+  padding: 10px;
+  background-color: var(--white-e5);
+}
+
+div.align-filter button[data-on="true"] {
+  background-color: var(--c-point-h);
+  color: white;
 }
