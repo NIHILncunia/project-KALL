@@ -139,30 +139,58 @@
       <div class="line">
         <div class="line-title">결제방법</div>
         <div class="line-content">
-          <input type="radio" id="transfer" name="payment" value="transfer">
-          <label for="transfer">계좌이체</label>
+          <div>
+            <input type="radio" id="transfer" name="payment" value="transfer">
+            <label for="transfer">계좌이체</label>
 
-          <input type="radio" id="credit-card" name="payment" value="credit">
-          <label for="credit-card">신용/체크카드</label>
+            <input type="radio" id="credit-card" name="payment" value="credit" checked>
+            <label for="credit-card">신용/체크카드</label>
 
-          <input type="radio" id="corporation-card" name="payment" value="corporation">
-          <label for="corporation-card">법인카드</label>
+            <input type="radio" id="corporation-card" name="payment" value="corporation">
+            <label for="corporation-card">법인카드</label>
 
-          <input type="radio" id="phone" name="payment" value="phone">
-          <label for="phone">휴대폰</label>
+            <input type="radio" id="phone" name="payment" value="phone">
+            <label for="phone">휴대폰</label>
 
-          <input type="radio" id="deposit-without-passbook" name="payment" value="depositWithout">
-          <label for="deposit-without-passbook">무통장입금(가상계좌)</label>
+            <input type="radio" id="deposit-without-passbook" name="payment" value="depositWithout">
+            <label for="deposit-without-passbook">무통장입금(가상계좌)</label>
+          </div>
+          <form action="./complete.html">
+            <div class="form-label">
+              <label for="card">카드번호</label>
+            </div>
+            <div class="form-input">
+              <input type="text" id="card" name="card[]" size="2" minlength="4" maxlength="4" required>
+              <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
+              <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
+              <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
+            </div>
+            <div class="form-label">
+              <label for="period">유효기간</label>
+            </div>
+            <div class="form-input">
+              <input type="text" id="period" name="period[]" size="2" maxlength="2" placeholder="mm" required> /
+              <input type="text" name="period[]" size="2" maxlength="2" placeholder="yy" required>
+            </div>
+            <div class="form-label">
+              <label for="cvc">CVC</label>
+            </div>
+            <div class="form-input">
+              <input type="text" id="cvc" name="cvc" minlength="3" maxlength="3" required>
+            </div>
+            <input type="submit" id="button" hidden>
+          </form>
         </div>
       </div>
     </div>
 
-    <script>
+    <!-- <script>
       const gotoComplete = () => {
         location.replace('./complete.html');
       };
-    </script>
-    <button onclick="gotoComplete()">결제하기</button>
+    </script> -->
+    <!-- <button onclick="gotoComplete()">결제하기</button> -->
+    <label for="button">결제하기</label>
   </main>
 
   <footer>

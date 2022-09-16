@@ -120,6 +120,29 @@ div.line div.line-content button:hover {
   color: white;
 }
 
+div.line-content form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  gap: 5px;
+  width: 400px;
+}
+
+div.line-content form div.form-input {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+div.line-content form div.form-input input {
+  all: unset;
+  flex: 1;
+  background-color: var(--white-e);
+  padding: 10px;
+  text-align: center;
+}
+
 /* ==================== 결제 상품 목록 ==================== */
 div.item-box {
   display: flex;
@@ -134,7 +157,8 @@ div.item-box div {
 }
 
 /* ==================== 버튼 ==================== */
-main button {
+main button,
+main>label {
   all: unset;
   display: block;
   margin: 0 auto;
@@ -148,7 +172,8 @@ main button {
   font-size: 1.5rem;
 }
 
-main button:hover {
+main button:hover,
+main>label:hover {
   background-color: var(--c-point-h);
   color: white;
 }
