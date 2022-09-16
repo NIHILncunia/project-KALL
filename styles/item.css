@@ -538,9 +538,31 @@ div.count-price {
   text-align: right;
 }
 
-/* div.count-custom button {
+/* ==================== 후기 템플릿 ==================== */
+details.review-box {}
+
+details.review-box summary {
   display: flex;
   align-items: center;
-  justify-content: center;
+  border: 1px solid #dddddd;
   padding: 10px;
-} */
+}
+
+details.review-box summary div.review-rating {
+  color: var(--c-point-h);
+  margin-right: 20px;
+}
+
+details.review-box summary div.review-rating span {
+  color: var(--black-3);
+}
+
+details.review-box summary div.review-title {
+  flex: 1;
+}
+
+details.review-box div.review-content {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-top: none;
+}
