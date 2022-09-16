@@ -10,7 +10,17 @@
   <link rel="stylesheet" href="../../styles/item.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
-  <title>아이템 1 | KALL</title>
+  <title>미니 하트 초 | KALL</title>
+
+  <style>
+    .detail_info {
+      text-align: center;
+    }
+
+    .detail_info span>img {
+      width: 1202px;
+    }
+  </style>
 </head>
 
 <body>
@@ -70,7 +80,7 @@
       <div id="top">
         <div class="top-left">
           <div class="main-image">
-            <img src="../../images/cakes/redvelvet.jpg" alt="케이크">
+            <img src="../../images/capture/etc/1/main.jpg" alt="하트초">
           </div>
           <div class="other-images">
             <div>이</div>
@@ -84,18 +94,15 @@
         <div class="top-right">
           <p class="tags">
             <span class="tag">
-              <a href="#">#색깔은</a>
+              <a href="#">#하트</a>
             </span>
             <span class="tag">
-              <a href="#">#대충 아무거나</a>
-            </span>
-            <span class="tag">
-              <a href="#">#나중에 정하는 걸로</a>
+              <a href="#">#초</a>
             </span>
           </p>
 
           <div class="right-header">
-            <h2>알록달록 무지개 케이크</h2>
+            <h2>미니 하트 초</h2>
             <div class="icons">
               <a href="#" class="heart" title="찜하기">
                 <span class="visually-hidden">찜하기</span>
@@ -122,11 +129,11 @@
 
           </div>
 
-          <p class="price">15,000원</p>
-          <p class="shipping-price">배송비<span>5000원</span></p>
+          <p class="price">5,000원</p>
+          <p class="shipping-price">배송비<span>3,000원 (주문 시 결제)</span></p>
 
           <div class="count-bar">
-            <div>상품 이름</div>
+            <div>미니 하트 초</div>
 
             <div class="count-custom">
               <input type="text" value="1" name="count">
@@ -134,7 +141,7 @@
               <button class="minus" type="button">-</button>
             </div>
 
-            <div class="count-price">가격</div>
+            <div class="count-price">5,000원</div>
           </div>
 
           <div class="buttons">
@@ -238,28 +245,18 @@
           <div class="content">
             <div class="description-grid">
               <div class="grid-title">제품명</div>
-              <div class="grid-content">그냥 케이크</div>
+              <div class="grid-content">미니 하트 초</div>
               <div class="grid-title">제품 종류</div>
-              <div class="grid-content">빵류(케이크류)</div>
-              <div class="grid-title">보관방법</div>
-              <div class="grid-content">
-                냉동보관 (영하18도)
-              </div>
-              <div class="grid-title">원재료명</div>
-              <div class="grid-content">
-                버터, 설탕, 전란, 박력분, 코코아분말, 베이킹파우더, 베이킹소다, 우유, 바닐라빈추출물, 갈색설탕, 식용유, 버터크림
-              </div>
-              <div class="grid-title">유통기한</div>
-              <div class="grid-content">
-                제조일로부터 3개월
-              </div>
-              <div class="grid-title">주의사항</div>
-              <div class="grid-content">
-                주의사항 - * 이 제품은 우유, 계란, 생크림을 사용한 제품과 같은 시설에서 제조합니다. * 본 제품은 공정거래위원회 고시 소비자 분쟁해결 기준에 의거 교환 또는 보상을 받을 수
-                있습니다. 유통기한 이내라도 개봉
-                이후 최대한 빠른 시일 내에 드시기 바랍니다. 부정 불량 식품 신고는 국번없이 1399</div>
+              <div class="grid-content">기타</div>
             </div>
-            <p><br>여기에는 제품 상세 설명 이미지들이 옵니다.</p>
+
+            <div class="detail_info">
+              <span>
+                <img src="../../images/capture/etc/1/side1.jpg" alt="초설명">
+                <img src="../../images/capture/etc/1/side2.jpg" alt="초사진">
+                <img src="../../images/capture/etc/1/side3.jpg" alt="초사이즈">
+              </span>
+            </div>
           </div>
         </section>
         <section id="shipping-info">
@@ -328,7 +325,24 @@
           </ul>
 
           <div class="content">
-            <p>여기에는 구매 후기들이 옵니다.</p>
+            <details class="review-box">
+              <summary>
+                <div class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="rating-number">(5)</span>
+                </div>
+                <div class="review-title">강추합니다</div>
+                <div class="review-user">YOO*******님이 작성한 후기</div>
+              </summary>
+
+              <div class="review-content">
+                배송도 빠르게왔고 내용도 안찌그러지게 고정 잘되서 왔어요~! 색감이 살짝 다르긴했지만 완전 만족스럽구용 선물받은 사람도 좋아했습니다~~ 다음에 또 이용할게요~
+              </div>
+            </details>
           </div>
         </section>
         <section id="questions">
@@ -349,7 +363,7 @@
           </ul>
 
           <div class="content">
-            <p>상품에 대한 궁금증이나 문의 리스트가 옵니다.</p>
+            <p>문의가 없습니다.</p>
           </div>
         </section>
       </div>
