@@ -90,12 +90,12 @@ button:hover {
 
 .find_info {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 50px;
 }
 
 .find_info>a {
-  width: 100%;
   text-decoration: underline;
   color: var(--c-link);
   font-size: 1.2rem;
