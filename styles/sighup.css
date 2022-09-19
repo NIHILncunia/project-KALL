@@ -45,11 +45,6 @@ fieldset {
   margin-right: 20px;
 }
 
-/* 입력값이 올바르지 않을 때에는 그냥 자바스크립트로 해결하도록 하자. */
-/* #required div input:invalid {
-  border-bottom: 2px solid #ff343450;
-} */
-
 #required div input:focus,
 #required div.e-mail select:focus {
   border-bottom: 2px solid var(--c-point-h);
@@ -226,9 +221,3 @@ fieldset {
   background-color: var(--c-point-h);
   color: #ffffff;
 }
-
-
-
-
-
-/*생년 월일 방문경로 밑에 줄 띄고 싶은데ㅎ 모르겠옴 */

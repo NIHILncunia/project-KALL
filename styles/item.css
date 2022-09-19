@@ -539,8 +539,6 @@ div.count-price {
 }
 
 /* ==================== 후기 템플릿 ==================== */
-details.review-box {}
-
 details.review-box summary {
   display: flex;
   align-items: center;

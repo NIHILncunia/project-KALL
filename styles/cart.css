@@ -64,40 +64,6 @@ main div.flow p.not-now {
 }
 
 /* ==================== 테이블 ==================== */
-/* table.item-table {
-  border: none;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  border-collapse: collapse;
-  margin-bottom: 50px;
-}
-
-table.item-table th {
-  background-color: var(--c-point);
-  color: var(--c-point-h);
-  border: none;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-table.item-table td {
-  background-color: var(--white-e);
-  color: var(--black-3);
-  padding: 10px;
-  font-size: 1.2rem;
-}
-
-table.item-table th:not(:last-of-type),
-table.item-table td:not(:last-of-type) {
-  border-right: 1px solid white;
-}
-
-table.item-table tr:not(:last-of-type) {
-  border-bottom: 1px solid white;
-} */
-
 div.cart {
   display: flex;
   flex-direction: column;

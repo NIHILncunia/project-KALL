@@ -72,25 +72,7 @@ main>h2 {
   color: var(--black-3);
 }
 
-/* mmmmmmmmmm내역조회/취소/반품/교환mmmmmmmmmmm */
-
-
-
-
 /* mmmmmmmmmmm하단 페이지 이동버튼mmmmmmmmmmmmmmmmmmm */
-/* .pagemove {
-  display: flex;
-  justify-content: center;
-}
-
-.pagemove>ol>li>a {
-  color: black;
-  font-weight: bold;
-}
-
-.pagemove>a>img {
-  width: 20px;
-} */
 
 div.pagination {
   display: flex;
