@@ -16,18 +16,15 @@
   --c-link-h: #1a7bdc;
 
   --white-f: #ffffff;
+  --white-f9: #f9f9f9;
   --white-e: #eeeeee;
-  --white-e5: #f9f9f9;
-  --black-2: #222222;
+  --white-d: #dddddd;
   --black-3: #333333;
-  --black-5: #555555;
-  --black-6: #666666;
 }
 
 * {
   padding: 0;
   margin: 0;
-  /* font-family: 'Noto Sans KR', sans-serif; */
   font-family: 'nanumsquare', sans-serif;
   font-weight: 400;
 }

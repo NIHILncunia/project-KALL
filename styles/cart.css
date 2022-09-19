@@ -16,7 +16,7 @@ main div.flow {
   font-size: 1.5rem;
   display: flex;
   line-height: 70px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   margin-bottom: 50px;
 }
 
@@ -50,7 +50,7 @@ main div.flow p.now.arrow.front::before {
 }
 
 main div.flow p.now.arrow.back::before {
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
 }
 
 main div.flow p.now:not(.arrow) {
@@ -102,7 +102,7 @@ div.line div.line-header {
 }
 
 div.line div.line-content {
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
 }
 
 /* ==================== 금액 ==================== */
@@ -121,7 +121,7 @@ div.line div.line-content {
   padding: 10px;
   flex: 1;
   text-align: center;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
 }
 
 #cash>p span,
@@ -160,5 +160,5 @@ div.buttons {
 
 form>div>input:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }

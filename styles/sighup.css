@@ -55,7 +55,7 @@ fieldset {
   flex: 1;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   box-sizing: border-box;
 }
 
@@ -104,7 +104,7 @@ fieldset {
 
 #required div.home-address button:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }
 
 /* ==================== 선택 입력 ==================== */
@@ -162,7 +162,7 @@ fieldset {
 }
 
 #choose>div div.checkboxs label:hover {
-  background-color: #dddddd;
+  background-color: var(--white-d);
 }
 
 #choose>div div.checkboxs label i {
@@ -219,5 +219,5 @@ fieldset {
 
 #join:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }

@@ -71,7 +71,7 @@ main .sc-container {
 
 .sc-container section input[type="radio"]+label {
   display: block;
-  background-color: #ffffff;
+  background-color: var(--white-f);
   padding: 10px;
   border-bottom: 1px solid #333333;
   font-size: 1.2rem;
@@ -107,7 +107,7 @@ main .sc-container {
 .sc-container section input[type="radio"]:checked+label+p {
   display: block;
   padding: 20px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   border-bottom: 1px solid #333333;
 }
 
@@ -124,7 +124,7 @@ main .sc-container {
   box-sizing: border-box;
   padding: 10px;
   font-size: 1.2rem;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   color: #333333;
   margin-bottom: 10px;
   align-self: stretch;
@@ -142,7 +142,7 @@ main .sc-container {
   padding: 10px;
   box-sizing: border-box;
   appearance: auto;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   font-size: 1.2rem;
   color: #333333;
   margin-bottom: 10px;
@@ -155,7 +155,7 @@ main .sc-container {
   box-sizing: border-box;
   font-size: 1.2rem;
   margin-bottom: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   color: #333333;
 }
 
@@ -201,7 +201,7 @@ main .sc-container {
 .sc-container form button:hover,
 .sc-container form .file-upload label:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }
 
 .hidden {

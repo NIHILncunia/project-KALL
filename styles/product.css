@@ -23,7 +23,7 @@ main div.option-tags details[open] {
 }
 
 main div.option-tags summary {
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   padding: 10px;
   cursor: pointer;
   /* ==================== NOTE: 임시로 숨겨둠 ==================== */
@@ -155,7 +155,7 @@ div.align-filter {
 div.align-filter button {
   all: unset;
   padding: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
 }
 
 div.align-filter button[data-on="true"] {

@@ -35,8 +35,8 @@ header {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid var(--white-f);
+  color: var(--white-f);
   border-radius: 50%;
   font-size: 1.5rem;
 }
@@ -49,7 +49,7 @@ header {
 /* ==================== 검색바 ==================== */
 header input {
   all: unset;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   padding: 10px 20px;
   font-size: 1.2rem;
   margin-right: 30px;
@@ -86,12 +86,12 @@ nav {
 
 .main-nav>li a {
   display: block;
-  color: #ffffff;
+  color: var(--white-f);
   padding: 10px 0;
   font-size: 1.2rem;
   text-align: center;
   font-weight: 600;
-  border-bottom: 5px dotted #ffffff;
+  border-bottom: 5px dotted var(--white-f);
 }
 
 .main-nav>li a:hover {

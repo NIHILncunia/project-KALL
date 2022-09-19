@@ -49,7 +49,7 @@ main a {
   box-sizing: border-box;
   margin-bottom: 10px;
   color: var(--black-3);
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
 }
 
 .login_ID>input:focus,
@@ -76,7 +76,7 @@ main a {
 
 button:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }
 
 .save_ID {
@@ -182,7 +182,7 @@ form input[type="radio"]+label {
 }
 
 form input[type="radio"]+label:hover {
-  background-color: #dddddd;
+  background-color: var(--white-d);
 }
 
 form input[type="radio"]+label:not(:last-of-type) {
@@ -227,7 +227,7 @@ div.ID_phone_confirm>div div.phone input {
 div.ID_email_confirm input,
 div.ID_phone_confirm input {
   all: unset;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   padding: 10px;
   text-align: left;
 }
@@ -245,7 +245,7 @@ button.ID_find_submit {
 
 button.ID_find_submit:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }
 
 form input#email_confirm:checked+label~div.ID_email_confirm,
@@ -278,7 +278,7 @@ form[name="customer_password_find_ID"] button {
 }
 
 form[name="customer_password_find_ID"] input {
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   padding: 10px;
   text-align: left;
 }
@@ -292,5 +292,5 @@ form[name="customer_password_find_ID"] button {
 
 form[name="customer_password_find_ID"] button:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }

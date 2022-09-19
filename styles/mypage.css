@@ -95,7 +95,7 @@ div.pagination a {
 div.pagination a:hover,
 div.pagination a[data-current="true"] {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }
 
 div.pagination a.prev {

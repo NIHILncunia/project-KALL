@@ -70,7 +70,7 @@ main {
 }
 
 .slide-button i {
-  color: #ffffff;
+  color: var(--white-f);
 }
 
 main section h2 {
@@ -103,7 +103,7 @@ main section .item-list .item:hover {
 }
 
 .item .item-image {
-  color: #ffffff;
+  color: var(--white-f);
   font-size: 2rem;
   text-align: center;
   line-height: 350px;

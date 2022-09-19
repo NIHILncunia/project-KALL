@@ -180,7 +180,7 @@ div.top-right div.select select {
   appearance: auto;
   box-sizing: border-box;
   padding: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
 }
 
 div.top-right div.select select:focus {
@@ -216,7 +216,7 @@ div.top-right div.select.radio input[type="radio"]:checked+label {
 div.top-right div.select input[type="text"] {
   all: unset;
   padding: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   color: var(--black-3);
   box-sizing: border-box;
 }
@@ -282,7 +282,7 @@ div.items {
 }
 
 div.items div.item {
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   padding: 10px;
 }
 
@@ -315,7 +315,7 @@ div.top-right div.count div.plus:hover {
 
 div.top-right div.count div.number {
   padding: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   flex: 0 50px;
   text-align: center;
 }
@@ -497,7 +497,7 @@ div.description-grid div.grid-title {
 
 div.description-grid div.grid-content {
   padding: 10px;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
 }
 
 /* ==================== 상품 수량 ==================== */
@@ -515,7 +515,7 @@ div.count-custom {
 
 div.count-custom input {
   all: unset;
-  background-color: var(--white-e5);
+  background-color: var(--white-f9);
   color: var(--black-3);
   grid-row: 1 / -1;
   padding: 10px;
@@ -531,7 +531,7 @@ div.count-custom button {
 
 div.count-custom button:hover {
   background-color: var(--c-point-h);
-  color: #ffffff;
+  color: var(--white-f);
 }
 
 div.count-price {
@@ -542,7 +542,7 @@ div.count-price {
 details.review-box summary {
   display: flex;
   align-items: center;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--white-d);
   padding: 10px;
 }
 
@@ -561,6 +561,6 @@ details.review-box summary div.review-title {
 
 details.review-box div.review-content {
   padding: 10px;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--white-d);
   border-top: none;
 }
