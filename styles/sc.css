@@ -127,6 +127,7 @@ main .sc-container {
   background-color: var(--white-e5);
   color: #333333;
   margin-bottom: 10px;
+  align-self: stretch;
 }
 
 .sc-container form input[type="text"]:focus,
