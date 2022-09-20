@@ -27,7 +27,7 @@ main div.option-tags summary {
   padding: 10px;
   cursor: pointer;
   /* ==================== NOTE: 임시로 숨겨둠 ==================== */
-  display: none;
+  /* display: none; */
 }
 
 main div.option-tags summary::after {
