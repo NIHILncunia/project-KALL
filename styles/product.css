@@ -159,6 +159,7 @@ div.align-filter input+label {
   padding: 10px;
   background-color: var(--white-f9);
   cursor: pointer;
+  line-height: 25px;
 }
 
 div.align-filter input+label:hover {
