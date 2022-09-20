@@ -152,13 +152,20 @@ div.align-filter {
   gap: 10px;
 }
 
-div.align-filter button {
-  all: unset;
+div.align-filter input+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   background-color: var(--white-f9);
+  cursor: pointer;
 }
 
-div.align-filter button[data-on="true"] {
+div.align-filter input+label:hover {
+  background-color: var(--white-e);
+}
+
+div.align-filter input:checked+label {
   background-color: var(--c-point-h);
   color: white;
 }

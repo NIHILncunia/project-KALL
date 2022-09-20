@@ -115,10 +115,12 @@
       <!-- Q&A로 연결 -->
 
       <section class="unknown_customer">
-        <button class="find_unknown_order" data-on="false">
+        <input type="checkbox" id="toggle-button" hidden>
+        <label for="toggle-button" class="find_unknown_order">비회원 주문 조회하기</label>
+        <!-- <button class="find_unknown_order" data-on="false">
           비회원 주문 조회하기
-        </button>
-        <form action="#" name="find_unknown_order" class="unknown_login" style="display: none;">
+        </button> -->
+        <form action="#" name="find_unknown_order" class="unknown_login">
           <div class="unknown_login_orderNum">
             <input type="text" name="orderNum" placeholder="주문번호" required>
           </div>
@@ -131,7 +133,6 @@
         </form>
       </section>
     </div>
-    <script src="../scripts/sighin.js"></script>
   </main>
 
   <footer>

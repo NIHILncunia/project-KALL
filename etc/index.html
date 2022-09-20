@@ -68,12 +68,15 @@
     <h2>ETC</h2>
 
     <div class="align-filter">
-      <button type="button" data-label="popular" data-on="false">인기순</button>
-      <button type="button" data-label="rate" data-on="false">평점순</button>
-      <button type="button" data-label="high-price" data-on="false">높은 가격순</button>
-      <button type="button" data-label="low-price" data-on="false">낮은 가격순</button>
+      <input type="radio" name="align" id="popular" hidden>
+      <label for="popular">인기순</label>
+      <input type="radio" name="align" id="rate" hidden>
+      <label for="rate">평점순</label>
+      <input type="radio" name="align" id="high-price" hidden>
+      <label for="high-price">높은 가격순</label>
+      <input type="radio" name="align" id="low-price" hidden>
+      <label for="low-price">낮은 가격순</label>
     </div>
-    <script src="../scripts/alignButtons.js"></script>
 
     <div class="item-list">
       <div class="item">
