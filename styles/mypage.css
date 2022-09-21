@@ -12,6 +12,11 @@ main>h2 {
   font-weight: 700;
 }
 
+main h2 a{
+  color: black;
+  font-size: 1.2rem;
+}
+
 .oderlist {
   height: 23px;
 }
@@ -129,6 +134,9 @@ div.pagination a.last {
 
 .my_orderpage>table {
   width: 100%;
+}
+
+.my_orderpage>table>thead {
   background-color: rgb(215, 230, 255);
 }
 
@@ -148,4 +156,12 @@ div.pagination a.last {
 .message {
   height: 200px;
   line-height: 200px;
+}
+
+.my_orderpage tbody td {
+  height: 70px;
+}
+
+.gara td:not(.orderNb) {
+  border-bottom: 1px dashed #33333350;
 }

@@ -541,8 +541,9 @@ div.count-price {
   text-align: right;
 }
 
-/* ==================== 후기 템플릿 ==================== */
-details.review-box summary {
+/* ==================== 후기,문의 템플릿 ==================== */
+details.review-box summary,
+details.question-box summary {
   display: flex;
   align-items: center;
   border: 1px solid var(--white-d);
@@ -559,12 +560,44 @@ details.review-box summary div.review-rating span {
   color: var(--black-3);
 }
 
-details.review-box summary div.review-title {
+details.review-box summary div.review-title,
+details.question-box summary div.question-title {
   flex: 1;
 }
 
-details.review-box div.review-content {
+details.review-box div.review-content,
+details.question-box div.question-content {
   padding: 10px;
   border: 1px solid var(--white-d);
   border-top: none;
+}
+
+div.question-buttons button,
+div.review-buttons button {
+  all: unset;
+  width: 90px;
+  padding: 15px 20px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  font-size: 1.2rem;
+}
+
+div.question-buttons,
+div.review-buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.question-box,
+.review-box {
+  margin-bottom: 10px;
+}
+
+div.question-buttons button:hover,
+div.review-buttons button:hover {
+  background-color: var(--c-point-h);
+  color: white;
 }

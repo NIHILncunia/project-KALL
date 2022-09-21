@@ -69,11 +69,13 @@
 
   <main>
     <!-- ==================== 도진 코드 ==================== -->
-    <h2>마이 페이지</h2>
+    <h2>마이 페이지
+      <a href="./modify.html">개인정보수정</a>
+    </h2>
     <div class="my_menu">
       <ul>
         <li><a href="">주문내역조회
-            <span id="">( 0 )</span>
+            <span id="">( 1 )</span>
           </a></li>
         <li><a href="">취소/반품/교환 내역
             <span id="">( 0 )</span>
@@ -138,16 +140,87 @@
           <thead>
             <tr>
               <th scope="col">주문일자<br>[주문번호]</th>
-              <th scope="col">이미지</th>
+              <!-- <th scope="col">이미지</th> -->
               <th scope="col">상품정보</th>
-              <th scope="col">수량</th>
+              <th scope="col">옵션</th>
               <th scope="col">상품구매금액</th>
               <th scope="col">주문처리상태</th>
               <th scope="col">취소/교환/반품</th>
             </tr>
           </thead>
+          <tbody>
+            <tr class="gara">
+              <td class="orderNb" rowspan="2">2022.09.07
+                <br>[20164-51154-32478]
+              </td>
+              <td>러블리 하트케이크
+
+              </td>
+              <td>일반 , 초코색 , 원형
+
+              </td>
+              <td>40,000
+
+              </td>
+              <td>배송완료
+              </td>
+              <td>-
+              </td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>티아라 케이크
+              </td>
+              <td> 1호
+              </td>
+              <td>35,000
+              </td>
+              <td>배송완료
+              </td>
+              <td>-
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
-        <p class="message">주문 내역이 없습니다.</p>
+
+        <!-- <table>
+          <thead>
+            <colgroup>
+              <col style="width:3%">
+              <col>
+              <col style="width:10%">
+              <col style="width:10%">
+            </colgroup>
+        
+            <tr>
+              <th>
+                <input type="checkbox" id="allcheck1" checked="checked">
+              </th>
+              <th>상품/옵션 정보</th>
+              <th scope="col">수량</th>
+              <th scope="col">상품금액</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>레터링케이크</td>
+              <td>1</td>
+              <td>35,000</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>레터링케이크</td>
+              <td>1</td>
+              <td>35,000</td>
+            </tr>
+          </tbody>
+        </table> -->
+
+
       </div>
 
       <div class="pagination">

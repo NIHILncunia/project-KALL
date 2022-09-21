@@ -143,6 +143,19 @@ div.line-content form div.form-input input {
   text-align: center;
 }
 
+div.line .line-content input {
+  border: none;
+  box-sizing: border-box;
+  background: var(--white-f9);
+  /* background-color: white; */
+  padding: 10px;
+  width: 100%;
+}
+
+.line-title label {
+  font-weight: 700;
+}
+
 /* ==================== 결제 상품 목록 ==================== */
 div.item-box {
   display: flex;
