@@ -23,10 +23,6 @@
     .detail_info span:nth-of-type(2) img {
       width: 1202px;
     }
-
-    div#top div.top-left div.main-image img {
-      height: 598px !important;
-    }
   </style>
 </head>
 
@@ -157,18 +153,14 @@
             <label for="size3">3호</label>
           </div>
 
-          <!-- 단품일 때 수량 고를 수 있게 하기 -->
-          <!-- <div class="count">
-            <div class="minus">
-              <span class="visually-hidden">수량 빼기</span>
-              <i class="fas fa-minus"></i>
-            </div>
-            <div class="number">1</div>
-            <div class="plus">
-              <span class="visually-hidden">수량 더하기</span>
-              <i class="fas fa-plus"></i>
-            </div>
-          </div> -->
+          <div class="select more-request">
+            <label for="more-request">추가 요청사항</label>
+            <input type="text" name="moreRequest" id="more-request" maxlength="40" placeholder="방문수령 원하시면 1:1 문의 주세요">
+          </div>
+
+          <div class="option-complete">
+            <button>선택 완료</button>
+          </div>
 
           <div class="buttons">
             <button>장바구니</button>

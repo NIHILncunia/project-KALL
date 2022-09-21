@@ -88,100 +88,105 @@
         <div class="line-content">010-1234-5678 <button>수정</button></div>
       </div>
     </div>
-
-    <h3>받는 사람 정보</h3>
-    <div class="info-block">
-      <div class="line">
-        <div class="line-title"><label for="name">이름</label></div>
-        <div class="line-content"><input type="text" id="name"></div>
-      </div>
-      <div class="line">
-        <div class="line-title"><label for="address">배송주소</label></div>
-        <div class="line-content"><input type="text" id="address"></div>
-      </div>
-      <div class="line">
-        <div class="line-title"><label for="phoneNb">연락처</label></div>
-        <div class="line-content"><input type="text" id="phoneNb" maxlength="11" placeholder="'-'없이 입력 하세요"></div>
-      </div>
-      <div class="line">
-        <div class="line-title"><label for="memo">배송시 요청사항</label></div>
-        <div class="line-content"><input type="text" id="memo"></div>
-      </div>
-    </div>
-
-    <h3>결제 상품 목록</h3>
-    <div class="item-box">
-      <div>러블리 하트케이크 | 일반, 초코색, 원형</div>
-      <div>티아라 케이크 | 1호</div>
-    </div>
-
-    <h3>결제 정보</h3>
-    <div class="info-block">
-      <div class="line">
-        <div class="line-title">총상품가격</div>
-        <div class="line-content">75,000원</div>
-      </div>
-      <div class="line">
-        <div class="line-title">배송비</div>
-        <div class="line-content">3,000원</div>
-      </div>
-      <div class="line">
-        <div class="line-title">총결제금액</div>
-        <div class="line-content">78,000원</div>
-      </div>
-      <div class="line">
-        <div class="line-title">배송일자</div>
-        <div class="line-content">언젠가</div>
-      </div>
-      <div class="line">
-        <div class="line-title">결제방법</div>
-        <div class="line-content">
-          <div>
-            <input type="radio" id="transfer" name="payment" value="transfer" disabled>
-            <label for="transfer">계좌이체</label>
-
-            <input type="radio" id="credit-card" name="payment" value="credit" checked>
-            <label for="credit-card">신용/체크카드</label>
-
-            <input type="radio" id="corporation-card" name="payment" value="corporation" disabled>
-            <label for="corporation-card">법인카드</label>
-
-            <input type="radio" id="phone" name="payment" value="phone" disabled>
-            <label for="phone">휴대폰</label>
-
-            <input type="radio" id="deposit-without-passbook" name="payment" value="depositWithout" disabled>
-            <label for="deposit-without-passbook">무통장입금(가상계좌)</label>
+    <form action="./complete.html">
+      <h3>받는 사람 정보</h3>
+      <div class="info-block to">
+        <div class="line">
+          <div class="line-title"><label for="name">이름</label></div>
+          <div class="line-content"><input type="text" name="name" id="name" placeholder="받으실 분의 이름을 입력하세요" required>
           </div>
-          <form action="./complete.html">
-            <div class="form-label">
-              <label for="card">카드번호</label>
-            </div>
-            <div class="form-input">
-              <input type="text" id="card" name="card[]" size="2" minlength="4" maxlength="4" required>
-              <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
-              <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
-              <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
-            </div>
-            <div class="form-label">
-              <label for="period">유효기간</label>
-            </div>
-            <div class="form-input">
-              <input type="text" id="period" name="period[]" size="2" maxlength="2" placeholder="mm" required> /
-              <input type="text" name="period[]" size="2" maxlength="2" placeholder="yy" required>
-            </div>
-            <div class="form-label">
-              <label for="cvc">CVC</label>
-            </div>
-            <div class="form-input">
-              <input type="text" id="cvc" name="cvc" minlength="3" maxlength="3" required>
-            </div>
-            <input type="submit" id="button" hidden>
-          </form>
+        </div>
+        <div class="line">
+          <div class="line-title"><label for="address">배송주소</label></div>
+          <div class="line-content"><input type="text" name="address" id="address" placeholder="배송 주소를 입력하세요" required>
+          </div>
+        </div>
+        <div class="line">
+          <div class="line-title"><label for="phoneNb">연락처</label></div>
+          <div class="line-content"><input type="text" name="phone" id="phoneNb" maxlength="11"
+              placeholder="'-'없이 입력 하세요" required>
+          </div>
+        </div>
+        <div class="line">
+          <div class="line-title"><label for="memo">배송시 요청사항</label></div>
+          <div class="line-content"><input type="text" name="memo" id="memo" placeholder="요청 사항을 입력해주세요" required></div>
         </div>
       </div>
-    </div>
 
-    <label for="button">결제하기</label>
+      <h3>결제 상품 목록</h3>
+      <div class="item-box">
+        <div>러블리 하트케이크 | 일반, 초코색, 원형</div>
+        <div>티아라 케이크 | 1호</div>
+      </div>
+
+      <h3>결제 정보</h3>
+      <div class="info-block pay">
+        <div class="line">
+          <div class="line-title">총상품가격</div>
+          <div class="line-content">75,000원</div>
+        </div>
+        <div class="line">
+          <div class="line-title">배송비</div>
+          <div class="line-content">3,000원</div>
+        </div>
+        <div class="line">
+          <div class="line-title">총결제금액</div>
+          <div class="line-content">78,000원</div>
+        </div>
+        <div class="line">
+          <div class="line-title">배송일자</div>
+          <div class="line-content">언젠가</div>
+        </div>
+        <div class="line">
+          <div class="line-title">결제방법</div>
+          <div class="line-content">
+            <div>
+              <input type="radio" id="transfer" name="payment" value="transfer" disabled>
+              <label for="transfer">계좌이체</label>
+
+              <input type="radio" id="credit-card" name="payment" value="credit" checked>
+              <label for="credit-card">신용/체크카드</label>
+
+              <input type="radio" id="corporation-card" name="payment" value="corporation" disabled>
+              <label for="corporation-card">법인카드</label>
+
+              <input type="radio" id="phone" name="payment" value="phone" disabled>
+              <label for="phone">휴대폰</label>
+
+              <input type="radio" id="deposit-without-passbook" name="payment" value="depositWithout" disabled>
+              <label for="deposit-without-passbook">무통장입금(가상계좌)</label>
+            </div>
+            <div class="pay-info">
+              <div class="form-label">
+                <label for="card">카드번호</label>
+              </div>
+              <div class="form-input">
+                <input type="text" id="card" name="card[]" size="2" minlength="4" maxlength="4" required>
+                <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
+                <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
+                <input type="text" name="card[]" size="2" minlength="4" maxlength="4" required>
+              </div>
+              <div class="form-label">
+                <label for="period">유효기간</label>
+              </div>
+              <div class="form-input">
+                <input type="text" id="period" name="period[]" size="2" maxlength="2" placeholder="mm" required> /
+                <input type="text" name="period[]" size="2" maxlength="2" placeholder="yy" required>
+              </div>
+              <div class="form-label">
+                <label for="cvc">CVC</label>
+              </div>
+              <div class="form-input">
+                <input type="text" id="cvc" name="cvc" minlength="3" maxlength="3" required>
+              </div>
+              <input type="submit" id="button" hidden>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label for="button">결제하기</label>
+    </form>
   </main>
 
   <footer>

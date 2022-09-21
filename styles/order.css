@@ -120,7 +120,7 @@ div.line div.line-content button:hover {
   color: white;
 }
 
-div.line-content form {
+div.line-content div.pay-info {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -129,13 +129,13 @@ div.line-content form {
   width: 400px;
 }
 
-div.line-content form div.form-input {
+div.info-block.pay div.line-content div.form-input {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-div.line-content form div.form-input input {
+div.info-block.pay div.line-content div.form-input input {
   all: unset;
   flex: 1;
   background-color: var(--white-e);
@@ -143,16 +143,17 @@ div.line-content form div.form-input input {
   text-align: center;
 }
 
-div.line .line-content input {
+div.info-block.to div.line .line-content input {
   border: none;
   box-sizing: border-box;
-  background: var(--white-f9);
-  /* background-color: white; */
-  padding: 10px;
+  background-color: var(--white-f9);
+  padding: 10px 0;
   width: 100%;
+  font-size: 1.2rem;
+  outline: none;
 }
 
-.line-title label {
+div.info-block.to div.line div.line-title label {
   font-weight: 700;
 }
 
@@ -170,8 +171,7 @@ div.item-box div {
 }
 
 /* ==================== 버튼 ==================== */
-main button,
-main>label {
+main>form>label {
   all: unset;
   display: block;
   margin: 0 auto;
@@ -185,8 +185,7 @@ main>label {
   font-size: 1.5rem;
 }
 
-main button:hover,
-main>label:hover {
+main>form>label:hover {
   background-color: var(--c-point-h);
   color: white;
 }
