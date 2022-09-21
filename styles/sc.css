@@ -133,7 +133,8 @@ main .sc-container {
 .sc-container form input[type="text"]:focus,
 .sc-container form select:focus,
 .sc-container form textarea:focus {
-  border: 1px solid var(--c-point);
+  border-bottom: 2px solid var(--c-point-h);
+  outline: none;
 }
 
 .sc-container form select {

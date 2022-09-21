@@ -188,21 +188,23 @@
 
             <input type="radio" name="color" id="color3" value="choco" hidden>
             <label for="color3">초코색</label>
-
-            <!-- <input type="radio" name="color" id="color4" value="black" hidden>
-              <label for="color4"></label> -->
           </div>
 
           <div class="select item-lettering">
             <label for="lettering">원하는 문구를 입력하세요.</label>
-            <input type="text" name="lettering" id="lettering">
+            <input type="text" name="lettering" id="lettering" maxlength="15">
           </div>
 
           <div class="select file item-image">
             <p>이미지 업로드</p>
             <input type="file" name="image" id="image" accept="image/*" hidden>
-            <input type="text" readonly>
+            <input type="text" readonly class="image-upload-text">
             <label for="image">파일 찾기</label>
+          </div>
+
+          <div class="select more-request">
+            <label for="more-request">추가 요청사항</label>
+            <input type="text" name="moreRequest" id="more-request" maxlength="40">
           </div>
 
           <div class="option-complete">

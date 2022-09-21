@@ -40,7 +40,8 @@ main a {
 .login_ID>input,
 .login_password>input,
 .unknown_login_orderNum>input,
-.unknown_login_email>input {
+.unknown_login_email>input,
+.unknown_login_phone_number>input {
   width: 100%;
   padding: 10px;
   border: none;
@@ -54,7 +55,8 @@ main a {
 .login_ID>input:focus,
 .login_password>input:focus,
 .unknown_login_orderNum>input:focus,
-.unknown_login_email>input:focus {
+.unknown_login_email>input:focus,
+.unknown_login_phone_number>input:focus {
   border-bottom: 2px solid var(--c-point-h);
   outline: none;
 }
@@ -115,6 +117,7 @@ button:hover {
   text-decoration: underline;
   color: var(--c-link);
   font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .find_info>a:hover {

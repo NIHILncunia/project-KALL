@@ -57,6 +57,7 @@ fieldset {
   font-size: 1.2rem;
   background-color: var(--white-f9);
   box-sizing: border-box;
+  align-self: stretch;
 }
 
 #required div.phone input {
