@@ -118,7 +118,8 @@ main .sc-container {
   font-size: 1.2rem;
 }
 
-.sc-container form input[type="text"] {
+.sc-container form input[type="text"],
+.sc-container form input[type="email"] {
   all: unset;
   width: 100%;
   box-sizing: border-box;
@@ -131,6 +132,7 @@ main .sc-container {
 }
 
 .sc-container form input[type="text"]:focus,
+.sc-container form input[type="email"]:focus,
 .sc-container form select:focus,
 .sc-container form textarea:focus {
   border-bottom: 2px solid var(--c-point-h);

@@ -374,7 +374,7 @@ div.other-items div.item {
 }
 
 div.other-items div.item:hover {
-  border-color: var(--c-point);
+  border-color: var(--c-point-h);
 }
 
 div.item div.image {

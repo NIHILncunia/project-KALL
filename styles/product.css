@@ -99,7 +99,7 @@ main div.option-tags button:hover {
 }
 
 .item:hover {
-  border-color: var(--c-point);
+  border-color: var(--c-point-h);
 }
 
 .item .item-name a {

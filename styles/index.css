@@ -46,19 +46,13 @@ main {
 .slide-button {
   position: absolute;
   top: calc((100% - var(--button-width)) / 2);
-  border: 1px solid #333333;
   border-radius: 50%;
-  background-color: #33333350;
   width: var(--button-width);
   height: var(--button-width);
   line-height: var(--button-width);
   text-align: center;
   font-size: 2rem;
   cursor: pointer;
-}
-
-.slide-button:hover {
-  background-color: #333333;
 }
 
 .slide-button.next {
@@ -70,7 +64,7 @@ main {
 }
 
 .slide-button i {
-  color: var(--white-f);
+  color: #333333;
 }
 
 main section h2 {
@@ -99,7 +93,7 @@ main section .item-list .item {
 }
 
 main section .item-list .item:hover {
-  border: 2px solid var(--c-point);
+  border: 2px solid var(--c-point-h);
 }
 
 .item .item-image {
