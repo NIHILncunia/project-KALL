@@ -147,6 +147,9 @@ fieldset {
   font-size: 1.2rem;
   user-select: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #choose>div div.checkboxs {
@@ -160,22 +163,14 @@ fieldset {
 #choose>div div.checkboxs label {
   flex-grow: 1;
   text-align: center;
+  align-self: stretch;
 }
 
 #choose>div div.checkboxs label:hover {
   background-color: var(--white-d);
 }
 
-#choose>div div.checkboxs label i {
-  display: none;
-}
-
-#choose div input[type="checkbox"]:checked+label i {
-  display: inline-block;
-}
-
-#choose div input[type="checkbox"]:checked+label,
-#choose div input[type="checkbox"]:checked+label i {
+#choose div input[type="checkbox"]:checked+label {
   background-color: var(--c-point);
   color: var(--black-3);
 }

@@ -82,6 +82,7 @@ nav {
   flex-basis: 150px;
   box-sizing: border-box;
   border-radius: 5px;
+  min-width: 74px;
 }
 
 .main-nav>li a {
