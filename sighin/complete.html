@@ -7,15 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/sighin.css">
+  <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
-
-  <style>
-    main p {
-      height: 500px;
-    }
-  </style>
 
   <title>로그인 | KALL</title>
 </head>
@@ -70,18 +64,142 @@
   </header>
 
   <main>
-    <div>
-      <h2>로그인 완료</h2>
-      <p>
-        나중엔 이런 페이지도 없음.<br>
-        로그인하면 메인 페이지로 돌아가게끔 수정할 예정.<br>
-        로그인을 하면 회원가입 버튼이 사라지고 마이 페이지로 바뀜.<br>
-        로그인 버튼은 로그아웃 버튼으로 바뀜.<br>
-        로그인을 유지하려면 쿠키 정보가 필요함. 아직은 구현 불가.
-      </p>
+    <div class="image-container">
+      <div class="slider">
+        <div class="image first">
+          <img src="../images/cake-cover.jpg" alt="케이크">
+        </div>
+        <!-- <div class="image second">대충 이미지 자리</div>
+        <div class="image third">대충 이미지 자리</div> -->
+      </div>
+      <div class="slide-button prev"><i class="fas fa-arrow-left"></i></div>
+      <div class="slide-button next"><i class="fas fa-arrow-right"></i></div>
     </div>
-  </main>
 
+    <section>
+      <h2>새로운 상품</h2>
+      <div class="item-list">
+        <div class="item">
+          <div class="item-image">
+            <a href="../item/new/item1.html">
+              <img src="../images/cake/product/product1.jpg" alt="러블리 하트케이크">
+            </a>
+          </div>
+          <p class="item-name">
+            <a href="../item/new/item1.html"><strong>러블리 하트케이크</strong></a>
+          </p>
+          <p class="item-price">40,000원</p>
+          <p class="item-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span class="rating-number">(4.5)</span>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-image">
+            <a href="../item/design/item1.html">
+              <img src="../images/cake/design/design1.png" alt="티아라 케이크">
+            </a>
+          </div>
+          <p class="item-name">
+            <a href="../item/design/item1.html"><strong>티아라 케이크</strong></a>
+          </p>
+          <p class="item-price">35,000원</p>
+          <p class="item-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span class="rating-number">(4.5)</span>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-image">
+            <a href="../item/ETC/item1.html">
+              <img src="../images/cake/etc/etc1.jpg" alt="미니 하트 초">
+            </a>
+          </div>
+          <p class="item-name">
+            <a href="../item/ETC/item1.html"><strong>미니 하트 초</strong></a>
+          </p>
+          <p class="item-price">5,000원</p>
+          <p class="item-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span class="rating-number">(4.5)</span>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-image">
+            <a href="#">
+              <img src="../images/cake/product/product3.jpg" alt="팔레트 케이크">
+            </a>
+          </div>
+          <p class="item-name">
+            <a href="#"><strong>팔레트 케이크</strong></a>
+          </p>
+          <p class="item-price">38,000원</p>
+          <p class="item-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span class="rating-number">(4.5)</span>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-image">
+            <a href="#">
+              <img src="../images/cake/design/design3.jpg" alt="오레오 쇼콜라 갸또 케이크">
+            </a>
+          </div>
+          <p class="item-name">
+            <a href="#"><strong>오레오 쇼콜라 갸또 케이크</strong></a>
+          </p>
+          <p class="item-price">30,000원</p>
+          <p class="item-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span class="rating-number">(4.5)</span>
+          </p>
+        </div>
+
+        <div class="item">
+          <div class="item-image">
+            <a href="#">
+              <img src="../images/cake/product//product5.png" alt="감사패 케이크">
+            </a>
+          </div>
+          <p class="item-name">
+            <a href="#"><strong>감사패 케이크</strong></a>
+          </p>
+          <p class="item-price">42,000원</p>
+          <p class="item-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span class="rating-number">(4.5)</span>
+          </p>
+        </div>
+    </section>
+  </main>
   <footer>
     <div class="links">
       <a href="../agreement">이용약관</a>

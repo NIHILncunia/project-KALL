@@ -11,19 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
 
-  <script defer src="./password_find.js"></script>
-
-  <title>비밀번호 찾기 | KALL</title>
-
-  <style>
-    main {
-      margin: 200px auto;
-    }
-
-    .red-text {
-      color: red;
-    }
-  </style>
+  <title>로그인 | KALL</title>
 </head>
 
 <body>
@@ -76,15 +64,73 @@
   </header>
 
   <main>
-    <h2>비밀번호 찾기</h2>
-    <p class="find_message">비밀번호를 찾고자 하는 아이디를 입력해주세요.</p>
+    <!-- ==================== 수진 코드 ==================== -->
+    <div class="login_page">
+      <form action="./complete.html" name="customer_login">
 
-    <form action="#" name="customer_password_find_ID">
-      <input type="text" id="ID_password" name="customer_ID" required>
-      <button class="password_find_submit" type="submit">다음</button>
-    </form>
+        <section class="login">
+          <h2>로그인</h2>
 
-    <p class="forget_id">아이디가 기억나지 않는다면? <a href="./id_find.html">아이디 찾기</a>로 바로가기</p>
+          <div class="login_ID">
+            <input type="text" name="customer_ID" placeholder="아이디" required>
+          </div>
+          <div class="login_password">
+            <input type="password" name="customer_password" placeholder="비밀번호" minlength="7" required>
+          </div>
+
+          <div class="save_ID">
+            <label>
+              <input type="checkbox" name="save_ID" value="save_ID"> 아이디 저장
+              <!-- 저장 가능할 시  -->
+            </label>
+            <label>
+              <input type="checkbox" name="auto_login" value="auto_login"> 자동 로그인
+            </label>
+          </div>
+
+          <button class="login_submit" type="submit">
+            로그인
+          </button>
+        </section>
+
+        <div class="find_info">
+          <a class="find_ID" href="./id_find.html">아이디 찾기</a>
+          <a class="find_passwoard" href="./password_find.html">비밀번호 찾기</a>
+          <a class="join" href="../sighup/">회원가입</a>
+        </div>
+      </form>
+
+      <!-- ===============SNS 로그인 가능시 ==================================================== -->
+
+      <section class="join_sns">
+        <h3>SNS로 간편하게 로그인하세요.</h3>
+        <a href="">카카오 간편 로그인</a>
+      </section>
+      <!-- 기능 구현 가능 시  -->
+
+      <!--===================== 비회원 주문 조회  ================================================= -->
+
+      <h3 class="login-question">
+        <a href="../community/guide/">로그인에 문제가 있으신가요?</a>
+      </h3>
+      <!-- Q&A로 연결 -->
+
+      <section class="unknown_customer">
+        <input type="checkbox" id="toggle-button" hidden>
+        <label for="toggle-button" class="find_unknown_order">비회원 주문하기</label>
+        <form action="#" name="find_unknown_order" class="unknown_login">
+          <div class="unknown_login_email">
+            <input type="email" name="customer_email" placeholder="이메일" required>
+          </div>
+          <div class="unknown_login_phone_number">
+            <input type="text" name="customer_phone_number" minlength="11" placeholder="핸드폰 번호" required>
+          </div>
+
+          <button class="order_submit" type="submit">주문하기
+          </button>
+        </form>
+      </section>
+    </div>
   </main>
 
   <footer>
