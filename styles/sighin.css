@@ -181,7 +181,7 @@ button:hover {
 /* ==================== 로그인 종료 ==================== */
 
 /* ==================== 아이디 찾기 ==================== */
-main p {
+/* main p {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -270,7 +270,7 @@ button.ID_find_submit:hover {
 form input#email_confirm:checked+label~div.ID_email_confirm,
 form input#phone_confirm:checked+label~div.ID_phone_confirm {
   display: block;
-}
+} */
 
 /* ==================== 비밀번호 찾기 ==================== */
 main>p:nth-of-type(2) {
@@ -292,7 +292,10 @@ form[name="customer_password_find_ID"] {
 }
 
 form[name="customer_password_find_ID"] input,
-form[name="customer_password_find_ID"] button {
+form[name="customer_password_find_ID"] button,
+main button.re-pass-button,
+main input.re-pass,
+main input.re-passcheck {
   all: unset;
 }
 
@@ -302,14 +305,33 @@ form[name="customer_password_find_ID"] input {
   text-align: left;
 }
 
-form[name="customer_password_find_ID"] button {
+form[name="customer_password_find_ID"] button,
+main button.re-pass-button {
   padding: 20px 10px;
   background-color: var(--c-point);
   color: var(--black-3);
   cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-form[name="customer_password_find_ID"] button:hover {
+form[name="customer_password_find_ID"] button:hover,
+main button.re-pass-button:hover {
   background-color: var(--c-point-h);
   color: var(--white-f);
+}
+
+main input.re-pass,
+main input.re-passcheck {
+  background-color: var(--white-f9);
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+main form.re-pass-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

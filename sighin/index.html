@@ -11,7 +11,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
 
+  <script defer type="module" src="./login.js"></script>
+
   <title>로그인 | KALL</title>
+
+  <style>
+    p.pass_message {
+      text-align: left;
+      color: red;
+      font-size: 1rem;
+      font-weight: 900;
+    }
+  </style>
 </head>
 
 <body>
@@ -76,6 +87,7 @@
           </div>
           <div class="login_password">
             <input type="password" name="customer_password" placeholder="비밀번호" minlength="7" required>
+            <p class="pass_message"></p>
           </div>
 
           <div class="save_ID">
@@ -88,9 +100,7 @@
             </label>
           </div>
 
-          <button class="login_submit" type="submit">
-            로그인
-          </button>
+          <button class="login_submit" type="button">로그인</button>
         </section>
 
         <div class="find_info">
