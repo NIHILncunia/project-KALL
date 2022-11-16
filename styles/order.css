@@ -165,9 +165,24 @@ div.item-box {
   margin-bottom: 50px;
 }
 
-div.item-box div {
+div.item-box div.list-item {
   padding: 10px;
+  display: flex;
   background-color: var(--white-f9);
+}
+
+div.item-box div.list-item div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+div.item-box div.list-item div.name {
+  flex: 1;
+}
+
+div.item-box div.list-item div.amount {
+  margin-right: 50px;
 }
 
 /* ==================== 버튼 ==================== */

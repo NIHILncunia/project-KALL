@@ -17,6 +17,9 @@
   <meta name="generator" content="MS VS CODE">
   <meta name="robots" content="index, follow">
 
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script defer src="./sighup.js"></script>
+
   <title>회원가입 | KALL</title>
 </head>
 
@@ -71,7 +74,7 @@
 
   <main>
     <!-- ==================== 윤지 코드 ==================== -->
-    <form action="./complete.html" name="memberJoin" class="sighup-form">
+    <form name="memberJoin" class="sighup-form">
       <fieldset id="required">
         <legend>필수입력 사항 </legend>
         <div>
@@ -87,17 +90,22 @@
 
         <div>
           <label for="password"><strong>비밀번호</strong> </label>
-          <input id="password" type="password" name="psw" placeholder="최소 7자리 이상 " minlength="7" required>
+          <input id="password" type="password" name="psw" placeholder="최소 7자리 이상" minlength="7" required>
         </div>
 
         <div>
           <label for="passwordck"><strong>비밀번호 확인</strong> </label>
-          <input id="passwordck" type="password" name="psw" minlength="7" required>
+          <input id="passwordck" type="password" name="psw" placeholder="최소 7자리 이상" minlength="7" required>
         </div>
 
         <!-- 비밀번호랑 비밀번호 확인 같아야 넘어가는건 어캐하는지 모름,,  -->
 
-        <div class="phone">
+        <div>
+          <label for="phone">전화번호</label>
+          <input id="phone" type="text" name="phone" placeholder="- 빼고 입력하세요" required>
+        </div>
+
+        <!-- <div class="phone">
           <label for="phone">
             <strong>전화번호</strong>
           </label>
@@ -106,9 +114,14 @@
           <input id="phone" type="text" name="mid_phone_num" minlength="3" maxlength="4" size="1" required>
           <span>-</span>
           <input type="text" name="last_phone_num" minlength="4" maxlength="4" size="1" required>
-        </div>
+        </div> -->
 
         <div>
+          <label for="email">이메일</label>
+          <input id="email" type="email" name="email" placeholder="example@.example.com" required>
+        </div>
+
+        <!-- <div>
           <label for="e-mail">
             <strong>이메일</strong>
           </label>
@@ -128,16 +141,30 @@
               <option value="icloud.com">icloud.com</option>
             </select>
           </div>
-        </div>
+        </div> -->
 
         <div class="home-address">
-          <label for="postal-code">주소</label>
+          <!-- 현재는 기능 적용이 불가능 -->
+          <div class="header">
+            <p>주소</p>
+          </div>
+          <div class="body">
+            <div>
+              <input type="text" id="postal-code" name="postalCode" placeholder="우편 번호" readonly required>
+              <button type="button" class="postal-code-search">우편번호 찾기</button>
+            </div>
+            <div>
+              <input type="text" class="address" name="address[]" placeholder="주소" readonly required>
+              <input type="text" class="address" name="address[]" placeholder="추가 주소" required>
+            </div>
+          </div>
+          <!-- <label for="postal-code">주소</label>
           <div>
             <input class="postal-code" type="text" name="postalCode" id="postal-code" readonly required>
             <button type="button">우편번호 검색</button>
-            <input type="text" name="address[]" readonly required>
-            <input type="text" name="address[]" required>
-          </div>
+            <input class="address" type="text" name="address[]" readonly required>
+            <input class="address" type="text" name="address[]" required>
+          </div> -->
         </div>
       </fieldset>
 
