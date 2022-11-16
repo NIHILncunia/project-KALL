@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/mypage.css">
+  <link rel="stylesheet" href="../styles/profile-main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
 
@@ -88,9 +88,10 @@
     </nav>
     <!-- 좌측네비게이터 -->
 
-    <!-- 마이페이지 메인 -->
+    <!-- 프로필페이지 메인 -->
     <div class="mypage">
-      <!-- 마이페이지 상단메뉴 -->
+
+      <!-- 프로필 -->
       <div class="mypage_profile">
         <div><a href="#">안도진</a> 님의 등급 혜택은<a href="#"> ___ </a>입니다.</div>
         <br>
@@ -98,45 +99,57 @@
           <a href="#">등급혜택 바로가기</a>
         </div>
       </div>
-      <!-- 마이페이지 상단메뉴 -->
+      <!-- 프로필 -->
 
+      <section>
+        <div>기본회원정보</div>
+        <table>
+          <tr>
+            <th>아이디</th>
+            <td>dojin1004</td>
+          </tr>
+          <tr>
+            <th>비밀번호</th>
+            <td>********</td>
+          </tr>
+          <tr>
+            <th>이름</th>
+            <td>안도진</td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td>qy15@naver.com</td>
+          </tr>
+          <tr>
+            <th>휴대전화</th>
+            <td>010 - 4200 - 1867</td>
+          </tr>
+          <tr>
+            <th>기본배송지</th>
+            <td>경기도 성남시 그린컴퓨터아카데미 505호</td>
+          </tr>
+        </table>
+      </section>
 
-      <!-- 마이페이지 중단메뉴 -->
-      <div class="mypage_orderlist">
-        <span>주문처리현황</span>
-        <div>
-          <a href=""><i class="fa-solid fa-barcode fa-3x" style="color :#adcdff;"></i>입금전
-            <span>0 건</span> </a>
+      <div class="mileage-coupon">
+        <div class="mywallet">
+          <a href="#">
+            <i class="fa-solid fa-coins fa-4x"></i>
+            <span>MILEAGE</span>
+          </a>
+          <div>사용 가능 금액 : <span>100,000,000</span> 원</div>
         </div>
-        <div>
-          <a href=""><i class="fa-solid fa-box-open fa-3x" style="color: #adcdff;"></i>배송준비중
-            <span>0 건</span> </a>
-        </div>
-        <div>
-          <a href=""><i class="fa-solid fa-truck-moving fa-3x" style="color: #adcdff"></i>배송중
-            <span>0 건</span> </a>
-        </div>
-        <div>
-          <a href=""><i class="fa-solid fa-check fa-3x" style="color: #adcdff;"></i>배송완료
-            <span>0 건</span> </a>
+        <div class="mywallet">
+          <a href="#">
+            <i class="fa-solid fa-ticket fa-4x"></i>
+            <span>COUPON</span>
+          </a>
+          <div>보유 중인 쿠폰 : <span>0</span> 장</div>
         </div>
       </div>
-      <!-- 마이페이지 중단메뉴 -->
-
-      <!-- 마이페이지 하단메뉴 -->
-      <div class="mypage_menu">
-        <div><a href="../profile/index.html"><i class="fa-regular fa-user fa-3x"></i>PROFILE</a></div>
-        <div><a href="#"><i class="fa-solid fa-clipboard-check fa-3x"></i>ORDER</a></div>
-        <div><a href="#"><i class="fa-regular fa-heart fa-3x"></i>WISH LIST</a></div>
-        <div><a href="#"><i class="fa-solid fa-clipboard-list fa-3x"></i>BOARD</a></div>
-        <div><a href="#"><i class="fa-solid fa-coins fa-3x"></i>MILEAGE</a></div>
-        <div><a href="#"><i class="fa-solid fa-ticket fa-3x"></i>COUPON</a></div>
-        <div><a href="#"><i class="fa-solid fa-house fa-3x"></i>ADRESS</a></div>
-        <div><a href="#"><i class="fa-solid fa-cart-shopping fa-3x"></i>CART</a></div>
-      </div>
-      <!-- 마이페이지 하단메뉴 -->
     </div>
-    <!-- 마이페이지 메인 -->
+    <!-- 프로필페이지 메인 -->
+
   </main>
 
   <footer>
@@ -172,6 +185,7 @@
       </p>
     </div>
   </footer>
+
 </body>
 
 </html>
