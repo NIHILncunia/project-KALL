@@ -57,3 +57,64 @@ totalPrice = allItemPrice + 3000;
 
 allItemPriceDiv.textContent = allItemPrice.toLocaleString() + '원';
 totalPriceDiv.textContent = totalPrice.toLocaleString() + '원';
+
+const key = ['이름', '이메일', '휴대폰번호'];
+
+const userData = {
+  name: '임윤지',
+  email: 'yoonji1004@naver.com',
+  phone: '01027769587',
+};
+
+const orderinfo = document.querySelector('.info-block');
+
+// for (let i = 0; i < 3; i++) {
+
+let infodiv = document.createElement('div');
+let line1div = document.createElement('div');
+let line2div = document.createElement('div');
+let line3div = document.createElement('div');
+let nametdiv = document.createElement('div');
+let namediv = document.createElement('div');
+let emailtdiv = document.createElement('div');
+let emaildiv = document.createElement('div');
+let phonetdiv = document.createElement('div');
+let phonediv = document.createElement('div');
+
+infodiv.classList.add('info-block');
+line1div.classList.add('line');
+line2div.classList.add('line');
+line3div.classList.add('line');
+
+////////
+nametdiv.classList.add('line-title');
+namediv.classList.add('line-content');
+
+nametdiv.textContent = '이름';
+namediv.textContent = userData.name;
+//////////
+emailtdiv.classList.add('line-title');
+emaildiv.classList.add('line-content');
+
+emailtdiv.textContent = '이메일';
+emaildiv.textContent = userData.email;
+///////////
+phonetdiv.classList.add('line-title');
+phonediv.classList.add('line-content');
+
+phonetdiv.textContent = '휴대폰 번호';
+phonediv.textContent = userData.phone;
+
+line1div.appendChild(nametdiv);
+line1div.appendChild(namediv);
+line2div.appendChild(emailtdiv);
+line2div.appendChild(emaildiv);
+line3div.appendChild(phonetdiv);
+line3div.appendChild(phonediv);
+
+infodiv.appendChild(line1div);
+infodiv.appendChild(line2div);
+infodiv.appendChild(line3div);
+
+orderinfo.appendChild(infodiv);
+// }

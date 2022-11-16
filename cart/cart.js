@@ -55,33 +55,33 @@ for (let i = 0; i < data.length; i++) {
 }
 
 // ==================== 선택시 가격 동기화 ====================
-let line = [...cart.querySelectorAll('div.line')].filter((item, index) => index !== 0);
+// let line = [...cart.querySelectorAll('div.line')].filter((item, index) => index !== 0);
 
-const allItemPriceSpan = document.querySelector('.all-item');
-const totalPriceSpan = document.querySelector('.total');
+// const allItemPriceSpan = document.querySelector('.all-item');
+// const totalPriceSpan = document.querySelector('.total');
 
-let allItemPrice = 0, totalPrice = 0;
+// let allItemPrice = 0, totalPrice = 0;
 
-line.forEach((item, index) => {
-  const checkbox = item.querySelector('input');
-  const price = item.querySelector('div.price');
-  const priceNumber = +price.textContent.replace('원', '').replace(',', '');
+// line.forEach((item, index) => {
+//   const checkbox = item.querySelector('input');
+//   const price = item.querySelector('div.price');
+//   const priceNumber = +price.textContent.replace('원', '').replace(',', '');
 
-  console.log(priceNumber);
+//   console.log(priceNumber);
 
-  checkbox.addEventListener('click', function () {
-    if (this.checked) {
-      allItemPrice += priceNumber;
-    } else {
-      allItemPrice -= priceNumber;
-    }
+//   checkbox.addEventListener('click', function () {
+//     if (this.checked) {
+//       allItemPrice += priceNumber;
+//     } else {
+//       allItemPrice -= priceNumber;
+//     }
 
-    totalPrice = allItemPrice === 0 ? 0 : allItemPrice + 3000;
+//     totalPrice = allItemPrice === 0 ? 0 : allItemPrice + 3000;
 
-    allItemPriceSpan.textContent = allItemPrice.toLocaleString() + '원';
-    totalPriceSpan.textContent = totalPrice.toLocaleString() + '원';
-  });
-});
+//     allItemPriceSpan.textContent = allItemPrice.toLocaleString() + '원';
+//     totalPriceSpan.textContent = totalPrice.toLocaleString() + '원';
+//   });
+// });
 
 // function priceChange() {
 
