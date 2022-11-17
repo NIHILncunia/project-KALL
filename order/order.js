@@ -1,5 +1,6 @@
 'use strict';
 
+// ==================== 더미 데이터 ====================
 const data = [
   {
     name: '러블리 하트케이크 | 일반, 초코색, 원형',
@@ -13,6 +14,7 @@ const data = [
   }
 ];
 
+// ==================== 결제 품목 목록화, 가격 동기화 ====================
 const orderlist = document.querySelector('.item-box');
 
 for (let i = 0; i < data.length; i++) {
@@ -58,8 +60,8 @@ totalPrice = allItemPrice + 3000;
 allItemPriceDiv.textContent = allItemPrice.toLocaleString() + '원';
 totalPriceDiv.textContent = totalPrice.toLocaleString() + '원';
 
-const key = ['이름', '이메일', '휴대폰번호'];
-
+// ==================== 구매자 정보를 현재 회원 정보로 ====================
+// ==================== 임시로 윤지 넣어둠. ====================
 const userData = {
   name: '임윤지',
   email: 'yoonji1004@naver.com',
@@ -67,8 +69,6 @@ const userData = {
 };
 
 const orderinfo = document.querySelector('.info-block');
-
-// for (let i = 0; i < 3; i++) {
 
 let infodiv = document.createElement('div');
 let line1div = document.createElement('div');
@@ -117,4 +117,3 @@ infodiv.appendChild(line2div);
 infodiv.appendChild(line3div);
 
 orderinfo.appendChild(infodiv);
-// }

@@ -17,7 +17,7 @@
   <meta name="generator" content="MS VS CODE">
   <meta name="robots" content="index, follow">
 
-  <script defer src="./cart.js"></script>
+  <script defer type="module" src="./cart.js"></script>
 
   <title>장바구니 | KALL</title>
 </head>
@@ -84,7 +84,7 @@
 
     <form action="../order/">
       <div class="cart">
-        <div class="line">
+        <div class="header-line">
           <div class="line-header w25">
             <input type="checkbox" id="all-item">
           </div>
@@ -92,36 +92,18 @@
           <div class="line-header w100">수량</div>
           <div class="line-header w100">상품금액</div>
         </div>
-        <!-- <div class="line">
-          <div class="line-content w25">
-            <input type="checkbox" name="item[]" value="item1">
-          </div>
-          <div class="line-content">러블리 하트케이크 | 일반, 초코색, 원형</div>
-          <div class="line-content w100">1</div>
-          <div class="line-content w100">40,000</div>
-        </div>
-        <div class="line">
-          <div class="line-content w25">
-            <input type="checkbox" name="item[]" value="item2">
-          </div>
-          <div class="line-content">티아라 케이크 | 1호</div>
-          <div class="line-content w100">1</div>
-          <div class="line-content w100">35,000</div>
-        </div> -->
       </div>
 
       <div id="cash">
-        <!-- <p>상품 총 금액 <i class="fas fa-caret-right"></i><span>75,000원</span></p> -->
         <p>상품 총 금액 <i class="fas fa-caret-right"></i><span class="all-item">0원</span></p>
         <p>배송비 <i class="fas fa-caret-right"></i><span class="delivery">3,000원</span></p>
       </div>
       <div id="all">
-        <!-- <p>합계 <i class="fas fa-caret-right"></i><span>78,000원</span></p> -->
         <p>합계 <i class="fas fa-caret-right"></i><span class="total">0원</span></p>
       </div>
 
       <div class="buttons">
-        <input type="submit" value="선택 항목 삭제">
+        <input type="button" class="seleted-delete" value="선택 항목 삭제">
         <input type="submit" value="선택 항목 주문">
         <input type="submit" value="모든 항목 주문">
       </div>

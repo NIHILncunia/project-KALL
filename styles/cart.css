@@ -71,13 +71,14 @@ div.cart {
   margin-bottom: 50px;
 }
 
-div.cart div.line {
+div.cart div.line,
+div.cart div.header-line {
   display: flex;
   flex-direction: row;
   gap: 1px;
 }
 
-div.line div.line-header,
+div.header-line div.line-header,
 div.line div.line-content {
   text-align: center;
   padding: 10px;
@@ -85,17 +86,17 @@ div.line div.line-content {
   font-size: 1.2rem;
 }
 
-div.line div.line-header.w25,
+div.header-line div.line-header.w25,
 div.line div.line-content.w25 {
   flex: 0 25px;
 }
 
-div.line div.line-header.w100,
+div.header-line div.line-header.w100,
 div.line div.line-content.w100 {
   flex: 0 100px;
 }
 
-div.line div.line-header {
+div.header-line div.line-header {
   background-color: var(--c-point);
   color: var(--black-3);
   font-weight: 700;

@@ -45,11 +45,13 @@ function login() {
   }
 }
 
+// ==================== 로그인 버튼 ====================
 loginButton.addEventListener('click', function (e) {
   e.preventDefault();
   login();
 });
 
+// ==================== 엔터로 로그인 ====================
 passInput.addEventListener('keydown', function (e) {
   if (e.keyCode === 13) {
     login();
