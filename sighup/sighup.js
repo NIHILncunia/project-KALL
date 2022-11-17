@@ -60,42 +60,24 @@ function onSubmitForm(e) {
 
 sighup_form.addEventListener('submit', onSubmitForm);
 
-// 'use strict'
+// ==================== 비밀번호 자리수 경고 ====================
+const psMessage = sighup_form.querySelectorAll('.pass-message');
 
-// //
-// const name = document.getElementById('name');
-// const id = document.getElementById('id');
-// const pw = document.getElementById('password');
-// const pwck = document.getElementById('passwordck');
-// //
-// const phone = document.getElementById('phone');
-// const email = document.getElementById('email');
-// const address = document.getElementById('postal-code"');
-// //
-// const year = document.getElementById('year_birth');
-// const month = document.getElementById('month_birth');
-// const day = document.getElementById('day_birth');
-// const visit = document.getElementById('visit-root');
-// //
-// const button = document.getElementById('join');
+pw.addEventListener('input', function (e) {
+  if (e.target.value.length < 7) {
+    psMessage[0].classList.remove('none');
+  } else {
+    psMessage[0].classList.add('none');
+  }
+});
 
-// function test(e) {
-//   e.preventDefault();
-//   const obj = {
-//     name: name.value,
-//     id: id.value,
-//     pw: pw.value,
-//     pwck: pwck.value,
-//     phone: phone.value,
-//     email: email.value,
-//     address: address.value,
-//     year: year.value,
-//     month: month.value,
-//     day: day.value,
-//     // visit:visit.value,
-//   };
-
-//   console.log(obj);
-// }
-
-// button.addEventListener('click', test);
+// ==================== 비밀번호, 비밀번호 확인 일치 경고 ====================
+[pw, pwck].forEach(function (item) {
+  item.addEventListener('input', function (e) {
+    if (pw.value !== pwck.value) {
+      psMessage[1].classList.remove('none');
+    } else {
+      psMessage[1].classList.add('none');
+    }
+  });
+});

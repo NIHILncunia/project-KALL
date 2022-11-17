@@ -7,79 +7,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/mypage.css">
+  <link rel="stylesheet" href="../styles/sighup.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
 
-  <title>본인 확인 | KALL</title>
+  <meta name="description" content="주문제작 케이크를 판매하는 KALL입니다.">
+  <meta name="keywords" content="케이크, 주문제작, cake">
+  <meta name="author" content="KALL">
+  <meta name="generator" content="MS VS CODE">
+  <meta name="robots" content="index, follow">
+  <title>회원가입 완료 | KALL</title>
 
   <style>
-    main {
-      width: 600px;
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-
-    main h2 {
+    div.message {
+      padding-top: 200px;
+      text-align: center;
       font-size: 2rem;
       font-weight: 700;
+      color: var(--black-3);
       margin-bottom: 20px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #333333;
     }
 
-    main>p {
-      margin-bottom: 20px;
-      line-height: 1.5;
-    }
-
-    main fieldset {
-      border: none;
-    }
-
-    main fieldset>div {
-      display: flex;
-      align-items: center;
-    }
-
-    main fieldset>div:nth-of-type(1) {
-      margin-bottom: 5px;
-    }
-
-    main fieldset>div :nth-child(1) {
-      width: 120px;
-    }
-
-    main fieldset>div div:nth-child(2) {
-      padding: 10px;
-    }
-
-    main fieldset>div input:nth-child(2) {
-      all: unset;
-      background-color: var(--white-f9);
-      padding: 10px;
-      flex: 1;
-    }
-
-    main div.buttons {
+    div.buttons {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      margin-top: 25px;
+      padding-bottom: 200px;
+      gap: 30px;
     }
 
-    main div.buttons button {
-      all: unset;
+    div.buttons a {
+      font-size: 1.5rem;
       background-color: var(--c-point);
+      padding: 20px 30px;
       color: var(--black-3);
-      padding: 20px 10px;
-      width: 120px;
-      text-align: center;
-      cursor: pointer;
     }
 
-    main div.buttons button:hover {
+    div.buttons a:hover {
       background-color: var(--c-point-h);
       color: var(--white-f);
     }
@@ -136,31 +100,19 @@
   </header>
 
   <main>
-    <h2>본인 확인</h2>
-    <p>회원님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 한번 확인해 주세요.</p>
+    <div class="message">
+      개인정보가 변경되었습니다.
+    </div>
 
-    <form action="./pmodify.html">
-      <fieldset>
-        <div>
-          <div class="label">아이디</div>
-          <div class="content">kingtaehyeon1004</div>
-        </div>
-        <div>
-          <label for="findPassword">비밀번호</label>
-          <input type="password" name="findPassword" id="findPassword" minlength="7" required>
-        </div>
-      </fieldset>
-
-      <div class="buttons">
-        <button type="button">취소</button>
-        <button type="submit">인증하기</button>
-      </div>
-    </form>
+    <div class="buttons">
+      <a href="../sighin/">로그인 하기</a>
+      <a href="/">메인으로 가기</a>
+    </div>
   </main>
 
   <footer>
     <div class="links">
-      <a href="../agreement/">이용약관</a>
+      <a href="../agreement">이용약관</a>
       <span>|</span><a href="../privacy">개인정보처리방침</a>
       <span>|</span><a href="../community/guide/">고객센터</a>
     </div>

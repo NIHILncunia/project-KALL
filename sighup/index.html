@@ -91,11 +91,13 @@
         <div>
           <label for="password"><strong>비밀번호</strong> </label>
           <input id="password" type="password" name="psw" placeholder="최소 7자리 이상" minlength="7" required>
+          <p class="pass-message none">비밀번호는 7자리 이상이어야 합니다.</p>
         </div>
 
         <div>
           <label for="passwordck"><strong>비밀번호 확인</strong> </label>
           <input id="passwordck" type="password" name="psw" placeholder="최소 7자리 이상" minlength="7" required>
+          <p class="pass-message none">비밀번호와 일치하지 않습니다.</p>
         </div>
 
         <!-- 비밀번호랑 비밀번호 확인 같아야 넘어가는건 어캐하는지 모름,,  -->
@@ -145,10 +147,10 @@
 
         <div class="home-address">
           <!-- 현재는 기능 적용이 불가능 -->
-          <div class="header">
+          <div class="header" style="margin-top: 10px; margin-bottom: 10px;">
             <p>주소</p>
           </div>
-          <div class="body">
+          <div class="body" style="margin-top: -10px;">
             <div>
               <input type="text" id="postal-code" name="postalCode" placeholder="우편 번호" readonly required>
               <button type="button" class="postal-code-search">우편번호 찾기</button>

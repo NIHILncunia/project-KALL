@@ -26,7 +26,6 @@ fieldset {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 #required div:not(:last-of-type) {
@@ -46,10 +45,10 @@ fieldset {
   margin-right: 20px;
 }
 
-#required div input:focus,
+/* #required div input:focus,
 #required div.e-mail select:focus {
   border-bottom: 2px solid var(--c-point-h);
-}
+} */
 
 #required div input {
   all: unset;
@@ -64,6 +63,29 @@ fieldset {
 #required div.phone input {
   text-align: center;
 }
+
+/* #required div.e-mail {
+  display: flex;
+  flex: 1;
+  margin-bottom: 0;
+  gap: 10px;
+}
+
+#required div.e-mail span {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+#required div.e-mail select {
+  all: unset;
+  border: 1px solid var(--white-e);
+  background-color: var(--white-e);
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  appearance: auto;
+  box-sizing: border-box;
+} */
 
 #required div.home-address {
   display: flex;
@@ -110,6 +132,27 @@ fieldset {
   flex-direction: column;
   gap: 10px;
 }
+
+/* #required div.home-address div {
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  gap: 10px;
+  flex: 1;
+}
+
+#required div.home-address button {
+  all: unset;
+  padding: 11px;
+  font-size: 1.2rem;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  cursor: pointer;
+}
+
+#required div.home-address button:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
+} */
 
 /* ==================== 선택 입력 ==================== */
 #choose div {
@@ -203,9 +246,8 @@ fieldset {
 /*회원가입 버튼 */
 /*백그라운드 색 바꾸기 */
 
-#join {
+#infochange {
   all: unset;
-  margin-top: 50px;
   width: 100%;
   box-sizing: border-box;
   background-color: var(--c-point);
@@ -216,21 +258,40 @@ fieldset {
   cursor: pointer;
 }
 
-#join:hover {
+#infochage:hover {
   background-color: var(--c-point-h);
   color: var(--white-f);
 }
 
-/* ==================== 비밀번호 글자수 경고 문구 ==================== */
-p.pass-message {
-  font-size: 1rem;
-  font-weight: 700;
-  color: red;
-  flex: 100%;
-  margin-left: 120px;
-  margin-top: 5px;
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm도지니 CSS */
+
+#required .newPassword,
+#required .newPasswordCheck,
+#required .newPhoneNb,
+#required .newEmail,
+#required .checkPasswordbox {
+  display: none;
 }
 
-p.pass-message.none {
-  display: none;
+button.changeinfoBt {
+  all: unset;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  border: none;
+  font-size: 1.2rem;
+  width: 120px !important;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+button.changeinfoBt:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
 }
