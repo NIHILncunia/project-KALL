@@ -93,16 +93,6 @@ const seleteddelete = document.querySelector('.seleted-delete');
 
 const itemline = document.querySelectorAll('.line');
 
-// itemline.forEach((item) => {
-//   const checkedbox = item.querySelector('input');
-
-//   if (checkedbox.checked) {
-//     if (seleteddelete) {
-//       checkedbox.remove
-//     }
-//   }
-// })
-
 seleteddelete.addEventListener('click', function (e) {
   e.preventDefault();
 
