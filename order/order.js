@@ -64,7 +64,7 @@ totalPriceDiv.textContent = totalPrice.toLocaleString() + '원';
 // ==================== 임시로 윤지 넣어둠. ====================
 const userData = {
   name: '임윤지',
-  email: 'yoonji1004@naver.com',
+  address: '대충 주소지',
   phone: '01027769587',
 };
 
@@ -96,8 +96,8 @@ namediv.textContent = userData.name;
 emailtdiv.classList.add('line-title');
 emaildiv.classList.add('line-content');
 
-emailtdiv.textContent = '이메일';
-emaildiv.textContent = userData.email;
+emailtdiv.textContent = '배송주소';
+emaildiv.textContent = userData.address;
 ///////////
 phonetdiv.classList.add('line-title');
 phonediv.classList.add('line-content');
@@ -117,3 +117,23 @@ infodiv.appendChild(line2div);
 infodiv.appendChild(line3div);
 
 orderinfo.appendChild(infodiv);
+
+// ==================== 구매자 정보와 받는 사람이 일치하면 클릭하는 버튼 ====================
+const infoSetting = document.querySelector('button.info-setting');
+
+infoSetting.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  const nameInput = document.querySelector('input#name');
+  const addressInput = document.querySelector('input#address');
+  const phoneNbInput = document.querySelector('input#phoneNb');
+
+  nameInput.readOnly = true;
+  nameInput.value = userData.name;
+
+  addressInput.readOnly = true;
+  addressInput.value = userData.address;
+
+  phoneNbInput.readOnly = true;
+  phoneNbInput.value = userData.phone;
+});

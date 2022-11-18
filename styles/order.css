@@ -204,3 +204,18 @@ main>form>label:hover {
   background-color: var(--c-point-h);
   color: white;
 }
+
+/* ==================== 구매자 정보와 받는 사람 일치할 경우 누르는 버튼 스타일 ==================== */
+button.info-setting {
+  all: unset;
+  padding: 5px 10px;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.info-setting:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
+}
