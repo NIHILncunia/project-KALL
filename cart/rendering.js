@@ -7,6 +7,7 @@ export default function rendering(node, cart) {
     let priceDiv = document.createElement('div');
 
     lineDiv.classList.add('line');
+    lineDiv.dataset.select = item.checked;
 
     checkDiv.classList.add('line-content', 'w25');
 

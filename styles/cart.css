@@ -80,7 +80,9 @@ div.cart div.header-line {
 
 div.header-line div.line-header,
 div.line div.line-content {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   flex: 1;
   font-size: 1.2rem;
@@ -91,9 +93,36 @@ div.line div.line-content.w25 {
   flex: 0 25px;
 }
 
-div.header-line div.line-header.w100,
-div.line div.line-content.w100 {
-  flex: 0 100px;
+div.header-line div.line-header.w150,
+div.line div.line-content.w150 {
+  flex: 0 150px;
+}
+
+div.line div.line-content.w150 {
+  position: relative;
+  gap: 10px;
+}
+
+div.line div.line-content.w150 button {
+  all: unset;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+}
+
+div.line div.line-content.w150 button:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
+}
+
+div.line div.line-content.w150 button.decrease {
+  left: 20px;
+}
+
+div.line div.line-content.w150 button.increase {
+  right: 20px;
 }
 
 div.header-line div.line-header {
