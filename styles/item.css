@@ -543,7 +543,9 @@ div.count-price {
 
 /* ==================== 후기,문의 템플릿 ==================== */
 details.review-box summary,
-details.question-box summary {
+details.question-box summary,
+.question_input,
+.question_input>input {
   display: flex;
   align-items: center;
   border: 1px solid var(--white-d);
@@ -600,4 +602,18 @@ div.question-buttons button:hover,
 div.review-buttons button:hover {
   background-color: var(--c-point-h);
   color: white;
+}
+
+.question_input>input {
+  height: 30px;
+}
+
+.question_input>input {
+  border: none;
+  display: flex;
+}
+
+.question_input>.q_input2 {
+  width: 100%;
+  border-left: 1px solid var(--white-d);
 }
