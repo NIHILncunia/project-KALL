@@ -4,13 +4,12 @@ let cake = document.querySelector('.right-header > h2'),
   cakesize = document.getElementsByName('size'),
   request = document.getElementById('more-request'),
   select = document.querySelector('.option-complete > button'),
-  itemsList = document.getElementsByClassName('items');
-const seleted_item = document.
-
+  itemsList = document.querySelector('.items');
+const seleted_item = document.querySelector('.seleted-item > span');
+const sizeString = document.querySelectorAll('.size');
 
 let textContent = '';
 let cakename = cake.textContent;
-let tmpArray = [];
 
 function changeColor(self) {
   if (self.classList.contains('far')) {
@@ -22,28 +21,38 @@ function changeColor(self) {
   }
 }
 
-function changesize() {
-  tmpArray = [...cakesize].filter((item) => item.checked);
-}
-
 function updateValue(e) {
   textContent = e.target.id;
 }
 
 function updateList() {
-  itemsList[0].innerHTML += `<div>선택된 상품 총 1개 </div><div>${cakename} - ${tmpArray[0].name} </div>`;
-  request.value = '';
+  const tmpArray = [...cakesize].filter((item) => item.checked)[0];
+
+  if (tmpArray) {
+    const sizeName = [...sizeString].filter((item) => item.htmlFor === tmpArray.id)[0];
+
+    const itemDiv = document.createElement('div');
+
+    if (request.value) {
+      itemDiv.textContent = `${cakename} - ${sizeName.textContent}, ${request.value}`;
+    } else {
+      itemDiv.textContent = `${cakename} - ${sizeName.textContent}`;
+    }
+
+    itemsList.appendChild(itemDiv);
+    seleted_item.textContent = itemsList.children.length;
+
+    request.value = '';
+  }
 }
-
-
 
 icon.addEventListener('click', function () {
   changeColor(this);
 });
 
-for (let i = 0; i < cakesize.length; i++) {
-  cakesize[i].addEventListener('click', changesize);
-}
+// for (let i = 0; i < cakesize.length; i++) {
+//   cakesize[i].addEventListener('click', changesize);
+// }
 
 request.addEventListener('input', updateValue);
 
