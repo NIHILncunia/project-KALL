@@ -28,15 +28,23 @@ button.addEventListener('click', function () {
     .filter((item) => item.checked);
 
   const letteringValue = lettering.value;
-
   const requestValue = request.value;
-
 
   let item = document.createElement('div');
 
-  item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value},${letteringValue},${requestValue}`);
-
-  console.log(item.textContent);
+  if (selectedsheet && selectedshape && selectedcream) {
+    if (letteringValue) {
+      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value},${letteringValue}`);
+    } else if (requestValue) {
+      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value},${requestValue}`);
+    } else if (letteringValue && requestValue) {
+      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value},${letteringValue},${requestValue}`);
+    } else {
+      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value}`);
+    }
+  } else {
+    return;
+  }
 
   items.appendChild(item);
 

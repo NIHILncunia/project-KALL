@@ -8,14 +8,20 @@ const forget = main.querySelector('.forget_id');
 const find_message = main.querySelector('.find_message');
 
 const id = ['NIHILncunia', 'dukjin', 'sujini', 'yoonja'];
+let flag = false;
 
 password_find_submit.addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (id.includes(ID_password.value)) {
+  if (id.includes(ID_password.value) && !flag) {
+    flag = true;
+
+    find_message.classList.add('red-text');
+    find_message.textContent = '비밀번호를 재설정하세요.';
+
     forget.style.display = 'none';
     password_find_submit.style.marginBottom = '30px';
-    
+
     const form = document.createElement('form');
     const pw = document.createElement('input');
     const pwcheck = document.createElement('input');
@@ -75,6 +81,9 @@ password_find_submit.addEventListener('click', function (e) {
 
       alert('새로운 비밀번호를 입력해주세요.');
     });
+  } else if (id.includes(ID_password.value) && flag) {
+    find_message.classList.add('red-text');
+    find_message.textContent = '비밀번호를 재설정하세요.';
   } else {
     find_message.classList.add('red-text');
     find_message.textContent = '일치하는 회원정보가 없습니다. 다시 확인해주세요.';

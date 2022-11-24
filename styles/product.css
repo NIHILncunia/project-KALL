@@ -14,7 +14,7 @@ main h2 {
 
 /* ==================== 태그 선택 목록 ==================== */
 main div.option-tags {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -44,25 +44,25 @@ main div.option-tags p {
 }
 
 main div.option-tags div.tags {
+
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 
-div.tags input+label {
+main div.option-tags div.tag {
   background-color: var(--c-point3);
   padding: 5px 10px;
   cursor: pointer;
   user-select: none;
 }
 
-div.tags input+label:hover {
+main div.option-tags div.tag.selected {
   background-color: var(--c-point3-h);
 }
 
-div.tags input:checked+label {
-  background-color: var(--c-point3-h);
-  color: var(--black-3);
+main div.option-tags div.tag:hover {
+  background-color: #f9daf5a0;
 }
 
 main div.option-tags button {
@@ -152,7 +152,7 @@ div.align-filter {
   gap: 10px;
 }
 
-div.align-filter input+label {
+div.align-filter div.align-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,11 +162,11 @@ div.align-filter input+label {
   line-height: 25px;
 }
 
-div.align-filter input+label:hover {
+div.align-filter div.align-button:hover {
   background-color: var(--white-e);
 }
 
-div.align-filter input:checked+label {
+div.align-filter div.align-button.selected {
   background-color: var(--c-point-h);
   color: white;
 }

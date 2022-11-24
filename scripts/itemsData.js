@@ -117,7 +117,7 @@ const itemsData = [
     price: 30000,
     createdAt: new Date('2022-10-03'),
     image: '/images/cake/design/design2.jpg',
-    tags: ['과자', ''],
+    tags: ['과자', '신상'],
   },
   {
     id: 11,
@@ -129,7 +129,7 @@ const itemsData = [
     price: 30000,
     createdAt: new Date('2022-10-03'),
     image: '/images/cake/design/design3.jpg',
-    tags: ['초콜릿', ''],
+    tags: ['초콜릿', '신상'],
   },
   {
     id: 12,
@@ -141,7 +141,7 @@ const itemsData = [
     price: 30000,
     createdAt: new Date('2022-10-04'),
     image: '/images/cake/design/design4.jpg',
-    tags: [],
+    tags: ['베스트셀러', '파티'],
   },
   {
     id: 13,
@@ -153,7 +153,7 @@ const itemsData = [
     price: 32000,
     createdAt: new Date('2022-10-05'),
     image: '/images/cake/design/design5.jpg',
-    tags: [],
+    tags: ['초콜릿', '친구'],
   },
   {
     id: 14,
@@ -165,7 +165,7 @@ const itemsData = [
     price: 30000,
     createdAt: new Date('2022-10-06'),
     image: '/images/cake/design/design6.png',
-    tags: [],
+    tags: ['베스트셀러', '캐릭터'],
   },
   {
     id: 15,
@@ -177,7 +177,7 @@ const itemsData = [
     price: 26000,
     createdAt: new Date('2022-10-07'),
     image: '/images/cake/design/design7.png',
-    tags: [],
+    tags: ['친구', '캐릭터'],
   },
   {
     id: 16,
@@ -189,7 +189,7 @@ const itemsData = [
     price: 26000,
     createdAt: new Date('2022-10-07'),
     image: '/images/cake/design/design8.jpg',
-    tags: [],
+    tags: ['캐릭터', '베스트셀러'],
   },
   {
     id: 17,

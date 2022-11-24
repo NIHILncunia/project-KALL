@@ -64,7 +64,7 @@ totalPriceDiv.textContent = totalPrice.toLocaleString() + '원';
 // ==================== 임시로 윤지 넣어둠. ====================
 const userData = {
   name: '임윤지',
-  address: '대충 주소지',
+  address: '경기도 성남시 분당구 판교원로 82번길 30',
   phone: '01027769587',
 };
 

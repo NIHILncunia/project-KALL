@@ -11,39 +11,34 @@ main {
   color: var(--black-3);
 }
 
-.image-container {
+#auto-carousel {
+  position: relative;
+}
+
+.carousel {
   margin-top: -75px;
   margin-bottom: 50px;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.image {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.image.first {
-  background-color: cadetblue;
-}
-
-.image.first img {
   width: 100%;
-  height: 600px;
+  overflow: hidden;
 }
 
-.image.second {
-  background-color: darkcyan;
+.carousel-img-list {
+  white-space: nowrap;
+  transition: ease 1s;
 }
 
-.image.third {
-  background-color: greenyellow;
+.carousel-item {
+  width: 100%;
+  display: inline-block;
 }
 
-.slide-button {
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+button.slide-button {
+  all: unset;
   position: absolute;
   top: calc((100% - var(--button-width)) / 2);
   border-radius: 50%;
@@ -53,18 +48,38 @@ main {
   text-align: center;
   font-size: 2rem;
   cursor: pointer;
+  z-index: 2;
 }
 
-.slide-button.next {
-  right: calc(var(--button-posx) / 2);
+button.slide-button.prev {
+  left: -35px;
 }
 
-.slide-button.prev {
-  left: calc(var(--button-posx) / 2);
+button.slide-button.next {
+  right: -35px;
 }
 
-.slide-button i {
-  color: #333333;
+div.carosel-indicator {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+div.carosel-indicator button {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  background-color: var(--c-point-h);
+  opacity: .3;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+div.carosel-indicator button.active {
+  opacity: 1;
 }
 
 main section h2 {
