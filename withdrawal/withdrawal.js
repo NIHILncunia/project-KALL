@@ -8,8 +8,6 @@ const withdrawal_check = document.querySelector('.withdrawal-check');
 const pass_check_button = document.querySelector('.pass-check-button');
 const pass = document.getElementById('pass');
 
-console.log(withdrawal_check);
-
 req_list.addEventListener('click', function () {
   if (this.classList.contains('close')) {
     this.classList.remove('close');
@@ -33,6 +31,8 @@ select_body.addEventListener('click', function (e) {
   req_list.classList.remove('open');
   req_list.classList.add('close');
 
+  req_list.dataset.value = value;
+
   switch (value) {
     case 'res1':
     case 'res2':
@@ -46,7 +46,9 @@ select_body.addEventListener('click', function (e) {
 });
 
 req_button.addEventListener('click', function () {
-  withdrawal_check.classList.remove('hidden');
+  if (req_list.dataset.value !== 'none') {
+    withdrawal_check.classList.remove('hidden');
+  }
 });
 
 pass_check_button.addEventListener('click', function () {
