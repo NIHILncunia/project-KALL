@@ -5,49 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/sighup.css">
+  <link rel="stylesheet" href="../styles/withdrawal.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
 
-  <meta name="description" content="주문제작 케이크를 판매하는 KALL입니다.">
-  <meta name="keywords" content="케이크, 주문제작, cake">
-  <meta name="author" content="KALL">
-  <meta name="generator" content="MS VS CODE">
-  <meta name="robots" content="index, follow">
-  <title>개인정보 변경 | KALL</title>
+  <title>회원탈퇴 | KALL</title>
 
-  <style>
-    div.message {
-      padding-top: 200px;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--black-3);
-      margin-bottom: 20px;
-    }
-
-    div.buttons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-bottom: 200px;
-      gap: 30px;
-    }
-
-    div.buttons a {
-      font-size: 1.5rem;
-      background-color: var(--c-point);
-      padding: 20px 30px;
-      color: var(--black-3);
-    }
-
-    div.buttons a:hover {
-      background-color: var(--c-point-h);
-      color: var(--white-f);
-    }
-  </style>
+  <script defer src="./withdrawal.js"></script>
 </head>
 
 <body>
@@ -80,14 +47,14 @@
     <ul class="user-menu">
       <li>
         <a href="../sighin/" title="로그인">
-          <span class="visually-hidden">로그인</span>
-          <i class="fas fa-key"></i>
+          <span class="visually-hidden">로그아웃</span>
+          <i class="fas fa-lock-open"></i>
         </a>
       </li>
       <li>
         <a href="../sighup/" title="회원가입">
-          <span class="visually-hidden">회원가입</span>
-          <i class="fas fa-user-plus"></i>
+          <span class="visually-hidden">마이페이지</span>
+          <i class="fas fa-user"></i>
         </a>
       </li>
       <li>
@@ -100,19 +67,42 @@
   </header>
 
   <main>
-    <div class="message">
-      개인정보가 변경되었습니다.
-    </div>
+    <div id="withdrawal">
+      <h2>회원 탈퇴</h2>
+      <p>회원 탈퇴 사유를 작성해주세요. 여러분의 소중한 피드백은 향후 운영에 많은 도움이 됩니다.</p>
+      <div class="withdrawal-req">
+        <div class="close" id="req_list">선택하세요</div>
+        <div class="select-body">
+          <div class="select-item" data-value="res1">더 이상 이용하지 않습니다.</div>
+          <div class="select-item" data-value="res2">쇼핑몰이 불친절합니다.</div>
+          <div class="select-item" data-value="res3">제가 가입한 계정이 아닙니다.</div>
+          <div class="select-item" data-value="res4">나중에 다시 가입하고 싶습니다.</div>
+          <div class="select-item" data-value="res5">직접 입력</div>
+        </div>
+      </div>
+      <div class="req-input hidden">
+        <input type="text" placeholder="탈퇴하려는 이유를 입력해주세요">
+      </div>
+      <div class="req-button">
+        <button type="button">회원 탈퇴하기</button>
+      </div>
 
-    <div class="buttons">
-      <a href="../sighin/">로그인 하기</a>
-      <a href="/">메인으로 가기</a>
+      <div class="withdrawal-check hidden">
+        <div class="pass">
+          <label for="pass">비밀번호</label>
+          <input type="text" id="pass" placeholder="7자리 이상 입력하세요" minlength="7">
+        </div>
+
+        <div class="pass-check-button">
+          <button>확인</button>
+        </div>
+      </div>
     </div>
   </main>
 
   <footer>
     <div class="links">
-      <a href="../agreement">이용약관</a>
+      <a href="../agreement/">이용약관</a>
       <span>|</span><a href="../privacy">개인정보처리방침</a>
       <span>|</span><a href="../community/guide/">고객센터</a>
     </div>

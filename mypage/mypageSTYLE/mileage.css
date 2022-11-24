@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 20px;
+}
+
+.DJ_mileageMain {
+    border: solid 10px #acdcff;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+.DJ_mileageMain {
+    padding: 10px;
+}
+
+.DJ_mileageInfo,
+h3 {
+    text-align: center;
+}
+
+.DJ_mileageInfo {
+    margin-bottom: 10px;
+    border: solid 2px #acdcff;
+    box-sizing: border-box;
+}
+
+h3 {
+    background-color: #acdcff;
+    color: white;
+}
+
+li{
+    margin: 10px;
+}
+
+

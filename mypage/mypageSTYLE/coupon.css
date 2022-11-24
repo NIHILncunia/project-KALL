@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    width: 700px;
+}
+
+table {
+    border: solid 10px #adcdff;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.DJ_couponInfo {
+    background-color: #adcdff;
+    height: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+
+table tr td:first-child {
+    padding-left: 10px;
+}
+
+table tr td:nth-child(n+2) {
+    text-align: center;
+}
+
+/* 쿠폰이벤트용 */
+.visible {
+    display: none;
+}
+
+
+
+/* 쿠폰등록창 */
+.DJ_couponInput {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+input {
+    width: 300px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    background-color: #adcdff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #3897f5;
+}
+
+p {
+    color: red;
+    text-align: center;
+    margin-top:10px ;
+}
+
+.Error{
+    display: none;
+}

@@ -23,10 +23,9 @@ checkPassword.addEventListener('click', function () {
     }
   }
 })
-
-
-
 //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
 
 //핸드폰번호변경 이벤트
 const changePhone = document.querySelector('.changePhone'),
@@ -37,6 +36,23 @@ changePhone.addEventListener('click', function () {
 });
 //mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
+
+
+
+//핸드폰변경 인증이벤트
+let checkPhone = document.querySelector('.checkPhone');
+
+checkPhone.addEventListener('click', () => {
+  var url = './changePhone.html',
+    name = 'popup',
+    option = "width = 450 , height = 630";
+  window.open(url, name, option);
+}
+)
+//mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+
 //이메일변경 이벤트
 const changeEmail = document.querySelector('.changeEmail'),
   newEmail = document.querySelector('.newEmail');
@@ -44,3 +60,20 @@ const changeEmail = document.querySelector('.changeEmail'),
 changeEmail.addEventListener('click', function () {
   newEmail.classList.remove('newEmail');
 });
+//mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
+
+//우편번호찾기 버튼
+const adress_add_button = document.querySelector(".adress_add_button");
+
+adress_add_button.addEventListener('click', function () {
+  var width = 500;
+  var height = 600;
+  new daum.Postcode({
+    width: width,
+    height: height
+  }).open({
+    left: (window.screen.width / 2) - (width / 2),
+    top: (window.screen.height / 2) - (height / 2)
+  });
+})

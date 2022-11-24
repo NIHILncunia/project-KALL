@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../styles/mypage.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
+  <script defer src="./mypageJS/mypage.js"></script>
 
   <script src="https://kit.fontawesome.com/f52a64922c.js" crossorigin="anonymous"></script>
   <title>마이페이지 | KALL</title>
@@ -72,16 +73,16 @@
     <nav class="navi_left">
       <ul>PROFILE
         <li><a href="../infochange/index.html">개인정보변경</a></li>
-        <li><a href="#">회원탈퇴</a></li>
-        <li><a href="#">배송지변경</a></li>
+        <li><a href="../withdrawal/">회원탈퇴</a></li>
+        <li><a href="./deliveryAdress.html">배송지변경</a></li>
       </ul>
       <ul>ORDER
-        <li><a href="#">주문내역</a></li>
-        <li><a href="#">배송내역</a></li>
-        <li><a href="#">완료내역</a></li>
+        <li><a href="../orderStatus/orderStatus.html">주문내역</a></li>
+        <li><a href="../orderStatus/orderStatusDv.html">배송내역</a></li>
+        <li><a href="../orderStatus/orderStatusCmp.html">완료내역</a></li>
       </ul>
       <ul>BOARD
-        <li><a href="#">후기게시글</a></li>
+        <li><a href="">후기게시글</a></li>
         <li><a href="#">문의게시글</a></li>
       </ul>
       <span><a href="#">WiSH LIST</a></span>
@@ -92,10 +93,11 @@
     <div class="mypage">
       <!-- 마이페이지 상단메뉴 -->
       <div class="mypage_profile">
-        <div><a href="#">안도진</a> 님의 등급 혜택은<a href="#"> ___ </a>입니다.</div>
+        <div><a href="../profile/index.html">안도진</a> 님의 회원등급은<a href="#" class="DJ_ClassInfo"> <i
+              class="fa-regular fa-gem fa-2x" style="color: silver;"></i> </a>입니다.</div>
         <br>
         <div>
-          <a href="#">등급혜택 바로가기</a>
+          <a href="#" class="DJ_ClassInfo">등급별 혜택</a>
         </div>
       </div>
       <!-- 마이페이지 상단메뉴 -->
@@ -105,19 +107,19 @@
       <div class="mypage_orderlist">
         <span>주문처리현황</span>
         <div>
-          <a href=""><i class="fa-solid fa-barcode fa-3x" style="color :#adcdff;"></i>입금전
+          <a href="#" class="beforePay deliveryBtn"><i class="fa-solid fa-barcode fa-3x" style="color :#adcdff;"></i>입금전
             <span>0 건</span> </a>
         </div>
         <div>
-          <a href=""><i class="fa-solid fa-box-open fa-3x" style="color: #adcdff;"></i>배송준비중
+          <a href="#" class="deliveryBtn"><i class="fa-solid fa-box-open fa-3x" style="color: #adcdff;"></i>배송준비중
             <span>0 건</span> </a>
         </div>
         <div>
-          <a href=""><i class="fa-solid fa-truck-moving fa-3x" style="color: #adcdff"></i>배송중
+          <a href="#" class="deliveryBtn"><i class="fa-solid fa-truck-moving fa-3x" style="color: #adcdff"></i>배송중
             <span>0 건</span> </a>
         </div>
         <div>
-          <a href=""><i class="fa-solid fa-check fa-3x" style="color: #adcdff;"></i>배송완료
+          <a href="#"><i class="fa-solid fa-check fa-3x" style="color: #adcdff;"></i>배송완료
             <span>0 건</span> </a>
         </div>
       </div>
@@ -129,10 +131,10 @@
         <div><a href="#"><i class="fa-solid fa-clipboard-check fa-3x"></i>ORDER</a></div>
         <div><a href="#"><i class="fa-regular fa-heart fa-3x"></i>WISH LIST</a></div>
         <div><a href="#"><i class="fa-solid fa-clipboard-list fa-3x"></i>BOARD</a></div>
-        <div><a href="#"><i class="fa-solid fa-coins fa-3x"></i>MILEAGE</a></div>
-        <div><a href="#"><i class="fa-solid fa-ticket fa-3x"></i>COUPON</a></div>
-        <div><a href="#"><i class="fa-solid fa-house fa-3x"></i>ADRESS</a></div>
-        <div><a href="#"><i class="fa-solid fa-cart-shopping fa-3x"></i>CART</a></div>
+        <div class="DJ_mileage"><a href="#"><i class="fa-solid fa-coins fa-3x"></i>MILEAGE</a></div>
+        <div class="DJ_coupon"><a href="#"><i class="fa-solid fa-ticket fa-3x"></i>COUPON</a></div>
+        <div><a href="./deliveryAdress.html"><i class="fa-solid fa-house fa-3x"></i>ADRESS</a></div>
+        <div><a href="../cart/index.html"><i class="fa-solid fa-cart-shopping fa-3x"></i>CART</a></div>
       </div>
       <!-- 마이페이지 하단메뉴 -->
     </div>

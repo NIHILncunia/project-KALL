@@ -7,18 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="../styles/profile-main.css">
+  <link rel="stylesheet" href="./orderStatusStyle/orderStatusCmp.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
-
-  <script src="https://kit.fontawesome.com/f52a64922c.js" crossorigin="anonymous"></script>
-  <script defer src="./profile.js"></script>
-
-  <title>프로필 | KALL</title>
+  <script defer src="./orderStatusJs/orderStaus.js"></script>
+  <title>완료내역</title>
 </head>
 
-<!-- TODO 회원탈퇴 추가 예정 -->
-<!-- TODO 찜한 상품 목록 관리 추가 예정 -->
 
 <body>
   <header>
@@ -68,14 +63,14 @@
       </li>
     </ul>
   </header>
-
-  <main class="mypage_main">
+  <!-- mypage_main -->
+  <main class="DJ_DvAdressMain">
     <!-- 좌측네비게이터 -->
     <nav class="navi_left">
       <ul>PROFILE
         <li><a href="../infochange/index.html">개인정보변경</a></li>
-        <li><a href="../withdrawal/index.html">회원탈퇴</a></li>
-        <li><a href="./deliveryAdress.html">배송지변경</a></li>
+        <li><a href="#">회원탈퇴</a></li>
+        <li><a href="../mypage/deliveryAdress.html">배송지변경</a></li>
       </ul>
       <ul>ORDER
         <li><a href="../orderStatus/orderStatus.html">주문내역</a></li>
@@ -90,68 +85,83 @@
     </nav>
     <!-- 좌측네비게이터 -->
 
-    <!-- 프로필페이지 메인 -->
-    <div class="mypage">
+    <section class="DJ_OdBox">
+      <h2>완료내역 조회</h2>
+      <ul class="DJ_OdStinfo">
+        <li>입금 확인 후 준비되는 제품입니다.</li>
+        <li>예약일을 지정하셨을 경우 예약일로부터 최소 2일 전 입금 부탁드립니다.</li>
+        <li>전체 주문완료된 상품의 내역만 보입니다.</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">상품정보</th>
+            <th>주문일자</th>
+            <th>주문번호</th>
+            <th>주문금액(수량)</th>
+            <th>주문상태</th>
+          </tr>
+        </thead>
 
-      <!-- 프로필 -->
-      <div class="mypage_profile">
-        <div><a href="../profile/index.html">안도진</a> 님의 회원등급은<a href="#" class="DJ_ClassInfo"> <i
-              class="fa-regular fa-gem fa-2x" style="color: silver;"></i> </a>입니다.</div>
-        <br>
-        <div>
-          <a href="#" class="DJ_ClassInfo">등급별 혜택</a>
-        </div>
-      </div>
-      <!-- 프로필 -->
+        <tbody>
 
-      <section>
-        <div>기본회원정보</div>
-        <table>
           <tr>
-            <th>아이디</th>
-            <td>dojin1004</td>
+            <td><a href="/item/design/item1.html">
+                <img src="../images/cake/product/product2.png" alt="">
+              </a>
+            </td>
+            <td>
+              <a href="/item/design/item1.html">
+                빈티지 메리 <br>체크 케이크<br>
+              </a>
+              <span>옵션 : 1호</span>
+            </td>
+            <td>2022.11.01</td>
+            <td>202201102512</td>
+            <td>36,000원 ( 1 )</td>
+            <td>배송완료</td>
           </tr>
-          <tr>
-            <th>비밀번호</th>
-            <td>********</td>
-          </tr>
-          <tr>
-            <th>이름</th>
-            <td>안도진</td>
-          </tr>
-          <tr>
-            <th>이메일</th>
-            <td>qy15@naver.com</td>
-          </tr>
-          <tr>
-            <th>휴대전화</th>
-            <td>010 - 4200 - 1867</td>
-          </tr>
-          <tr>
-            <th>기본배송지</th>
-            <td>경기도 성남시 그린컴퓨터아카데미 505호</td>
-          </tr>
-        </table>
-      </section>
 
-      <div class="mileage-coupon">
-        <div class="mywallet">
-          <a href="#">
-            <i class="fa-solid fa-coins fa-4x"></i>
-            <span>MILEAGE</span>
-          </a>
-          <div>사용 가능 금액 : <span>100,000,000</span> 원</div>
-        </div>
-        <div class="mywallet">
-          <a href="#">
-            <i class="fa-solid fa-ticket fa-4x"></i>
-            <span>COUPON</span>
-          </a>
-          <div>보유 중인 쿠폰 : <span>0</span> 장</div>
-        </div>
-      </div>
-    </div>
-    <!-- 프로필페이지 메인 -->
+          <tr>
+            <td><a href="/item/design/item1.html">
+                <img src="../images/cake/design/design2.jpg" alt="">
+              </a>
+            </td>
+            <td>
+              <a href="/item/design/item1.html">
+                로투스 케이크<br>
+              </a>
+              <span>옵션 : 1호</span>
+            </td>
+            <td>2022.11.01</td>
+            <td>202201102513</td>
+            <td>30,000원 ( 1 )</td>
+            <td>배송완료</td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="/item/new/item1.html">
+                <img src="../images/cake/product/product1.jpg" alt="">
+              </a>
+            </td>
+            <td>
+              <a href="/item/new/item1.html">
+                러블리하트케이크<br>
+              </a>
+              <span>옵션 : 일반, 초코색, 원형</span>
+            </td>
+            <td>2021.11.25</td>
+            <td>202201102501</td>
+            <td>40,000원 ( 1 )</td>
+            <td>배송완료</td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+    </section>
 
   </main>
 

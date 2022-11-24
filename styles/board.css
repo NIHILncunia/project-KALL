@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  color: var(--black-3);
+  font-size: 1.2rem;
+}
+
+.mypage_main {
+  width: 1400px;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 마이페이지쪽 공통 */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+
+nav.navi_left {
+  width: 200px;
+  margin-left: 0;
+  position: fixed;
+  left: 10%;
+  padding: 10px;
+}
+
+.navi_left ul,
+.navi_left span a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 15px;
+}
+
+.navi_left a {
+  color: black;
+  font-size: 1.0rem;
+}
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm게시판페이지 */
+/* 상단메뉴 */
+
+.board {
+  width: 80%;
+}
+
+.board {
+  border: solid 10px #adcdff;
+  height: 348px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마이페이지 */
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmHOVER */
+/* mmmmmmmmmmmmmmmmm나중엔 자바스크립트로 하기 */
+.mypage_orderlist a:hover,
+.mypage_menu a:hover {
+  color: #3897f5;
+}
+
+.navi_left a:hover {
+  font-weight: 900;
+}

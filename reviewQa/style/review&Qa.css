@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  color: var(--black-3);
+  font-size: 1.2rem;
+}
+
+.mypage_main {
+  width: 1400px;
+  height: 1111px;
+  display: flex;
+  justify-content: center;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+nav.navi_left {
+  width: 200px;
+  margin-left: 0;
+  position: fixed;
+  left: 10%;
+  padding: 10px;
+}
+
+.navi_left ul,
+.navi_left span a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 15px;
+}
+
+.navi_left a {
+  color: black;
+  font-size: 1.0rem;
+}
+/* 네비게이션 히든 */
+.DJ_naviHidden {
+  display: none;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm프로필메인 */
+/* 기본프로필 */
+.mypage,
+#mypage_Q {
+  width: 80%;
+}
+#mypage_Q section {
+  border: solid 10px #adcdff;
+}
+
+.mypage_profile {
+
+  /* height: 348px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#mypage_Q {
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#mypage_Q section h3 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.mypage_profile a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+.col1 {
+  width : 300px;
+  line-height: 20px;;
+}
+.col2 {
+  width : 300px;
+}
+.col3 {
+  width : 500px;
+}
+
+#QAList,
+#REVIEWList {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 1px solid #3c3c3c;
+  line-height: 40px;
+}
+
+#toggle_container .toggle_Q div.QA_content {
+  text-align: left;
+}
+#QAList #toggle_container .toggle_A,
+#REVIEWList #toggle_container .toggle_A {
+  display: none;
+  text-align: justify;
+  word-break: break-all;
+  width: 100%;
+}
+
+#toggle_container .toggle_A div {
+  width: 100%;
+}
+
+#toggle_container .toggle_Q,
+thead tr {
+  background-color: var(--white-f);
+  padding: 10px;
+  border-bottom: 2px solid #dddddd;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+
+#toggle_container .toggle_Q:last-child {
+  border-bottom: none;
+}
+
+#toggle_container .QA_a_content,
+#toggle_container .REVIEW_a_content {
+  margin-top: 30px;
+}
+
+#toggle_container .QA_a_content::before {
+  content: '\f031';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  color: lightskyblue;
+}
+
+#toggle_container .QA_q_title::before,
+#toggle_container .QA_q_content::before {
+  content: '\f059';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+}
+
+#toggle_container .QA_q_a
+#toggle_container .REVIEW_q_a {
+  padding: 20px;
+  background-color: var(--white-f9);
+}
+#QAList #toggle_container .toggle_A.open,
+#REVIEWList #toggle_container .toggle_A.open {
+  display: table-row;
+  /* table의 경우 display:none -> 변경 시 colsapn이 안먹힌다... */
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  word-break: break-all;
+  text-align: justify;
+  font-weight: 900;
+  width:100%;
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+
+
+  /* right: 20px;
+  top: 50%;
+  transform: translateY(-50%); */
+}
+
+
+
+
+
+
+
+
+
+/* 기본프로필 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm기본회원정보 */
+
+.mypage section {
+  margin-top: 20px;
+  border: solid 10px #adcdff;
+  box-sizing: border-box;
+  height: 348px;
+}
+
+.mypage section div {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #adcdff;
+  color: white;
+  gap: 10px;
+}
+
+.mypage section div span,
+.mypage section div {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.mypage table {
+  height: 85%;
+  width: 100%;
+}
+
+.mypage th {
+  font-weight: 900;
+  background-color: #adcdff;
+  color: white;
+}
+
+.mypage td {
+  padding: 10px;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm기본회원정보 */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마일리지&쿠폰 */
+
+.mileage-coupon {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  border: solid 10px #adcdff;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.mileage-coupon i {
+  color: #adcdff;
+}
+
+.mywallet a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.mywallet span {
+  font-weight: 900;
+}
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마일리지&쿠폰 */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm프로필메인 */
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmHOVER */
+/* mmmmmmmmmmmmmmmmm나중엔 자바스크립트로 하기 */
+
+.navi_left a:hover {
+  font-weight: 900;
+}
+
+.mywallet a:hover,
+.mywallet a:hover i {
+  color: #3897f5;
+}

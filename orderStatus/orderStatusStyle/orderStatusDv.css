@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    color: var(--black-3);
+    font-size: 1.2rem;
+}
+
+.DJ_DvAdressMain {
+    width: 1000px;
+}
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+nav.navi_left {
+    width: 200px;
+    margin-left: 0;
+    position: fixed;
+    left: 10%;
+    padding: 10px;
+}
+
+.navi_left ul,
+.navi_left span a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 15px;
+}
+
+.navi_left a {
+    color: black;
+    font-size: 1.0rem;
+}
+
+/* 네비게이션 히든 */
+.DJ_naviHidden {
+    display: none;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+
+section {
+    width: 100%;
+    /* height: 460px; */
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table tr td:first-child {
+    height: 120px;
+}
+
+thead {
+    background-color: #acdcff;
+    height: 40px;
+    color: white;
+    font-weight: 900;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    display: block;
+}
+
+tr td:nth-child(1) {
+    width: 120px;
+}
+
+h2 {
+    border-bottom: solid 2px lightgray;
+    margin-bottom: 20px;
+}
+
+.DJ_OdStinfo {
+    color: gray;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+tr td:last-child {
+    color: red;
+    font-size: 15px;
+}
+
+table a {
+    color: black;
+    font-weight: 900;
+}
+
+span {
+    font-size: 15px;
+}
+
+.DJ_OdBox tr {
+    border-bottom: solid 1px;
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    margin: 20px;
+}
+
+/* 주문하신상품 */
+.deliveryGuide h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 10px;
+    border-bottom: solid 4px lightgrey;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/* 딜리버리가이드 div */
+.deliveryGuide {
+    width: 850px;
+    height: 510px;
+    font-weight: 900;
+    position: relative;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/* 딜리버이가이드테이블 */
+.deliveryGuideList {
+    width: 100%;
+    border: solid 10px #adcdff;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/*  */
+.deliveryGuideMenu {
+    height: 40px;
+    background-color: #adcdff;
+    color: white;
+    font-weight: 900;
+}
+
+.deliveryGuideMenu th:first-child {
+    width: 150px;
+}
+
+
+.delievery-img {
+    width: 150px;
+    height: 150px;
+}
+
+.accountInfo {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.pay {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button.closeBtn {
+    width: 60px;
+    height: 40px;
+    background-color: #adcdff;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}

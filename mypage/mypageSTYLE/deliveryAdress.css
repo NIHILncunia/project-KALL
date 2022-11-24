@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    color: var(--black-3);
+    font-size: 1.2rem;
+}
+
+.DJ_DvAdressMain {
+    width: 1200px;
+    height: 525px;
+    display: flex;
+    justify-content: center;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+nav.navi_left {
+    width: 200px;
+    margin-left: 0;
+    position: fixed;
+    left: 10%;
+    padding: 10px;
+}
+
+.navi_left ul,
+.navi_left span a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 15px;
+}
+
+.navi_left a {
+    color: black;
+    font-size: 1.0rem;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+/* 
+
+
+
+/* 배송지페이지 */
+
+section {
+    width: 1200px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    border-bottom: solid 1px lightgray;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+}
+
+thead {
+    background-color: #adcdff;
+    font-weight: 900;
+    color: white;
+
+}
+
+tr {
+    height: 70px;
+    border-bottom: solid 1px lightgray;
+}
+
+tbody tr:nth-child(n+1):hover {
+    background-color: lightgray;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3897f5;
+    color: white;
+}
+
+button.DJ_pageListBtn:hover {
+    color: #3897f5;
+    background-color: white;
+}
+
+.DJ_DvAdChangeBtn {
+    background-color: #adcdff;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+    font-weight: 900;
+}
+
+.DJ_pageListNb {
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+
+.DJ_pageListBtn {
+    font-size: large;
+    font-weight: 900;
+    background-color: white;
+    border: none;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.DJ_DvAdUpBtn {
+    height: 40px;
+    width: 80px;
+    background-color: #adcdff;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.DJ_DvUP {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.DJ_DvAdName {
+    font-size: 15px;
+}
+
+.DJ_DvAdName span {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.DJ_DvAdress span {
+    color: red;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.DJ_naviHidden {
+    display: none;
+}

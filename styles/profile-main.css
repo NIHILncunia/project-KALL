@@ -148,3 +148,7 @@ nav.navi_left {
 .mywallet a:hover i {
   color: #3897f5;
 }
+
+.DJ_naviHidden {
+  display: none;
+}

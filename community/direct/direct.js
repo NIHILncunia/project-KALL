@@ -1,5 +1,3 @@
-
-
 const askbtn = document.getElementsByClassName('clientAsk');
 
 const email = document.getElementById('email');

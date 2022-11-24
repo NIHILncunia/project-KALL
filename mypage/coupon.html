@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mypageSTYLE/coupon.css">
+    <script defer src="./mypageJS/coupon.js"></script>
+    <title>coupon</title>
+</head>
+
+<body>
+    <h3>보유중인쿠폰</h3>
+    <br>
+    <table>
+        <tr class="DJ_couponInfo">
+            <th>쿠폰 이름</th>
+            <th>사용기한</th>
+            <th>잔여수량</th>
+        </tr>
+        <tr>
+            <td><strong>생일쿠폰 10%</strong></td>
+            <td>2022.11.01 ~ 22.12.01</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><strong>등급쿠폰 다이아 10%</strong></td>
+            <td>2022.01.01 ~ 23.01.01</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><strong>등급쿠폰 플레티넘 7%</strong></td>
+            <td>2022.01.01 ~ 23.01.01</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><strong>등급쿠폰 골드 5%</strong></td>
+            <td>2022.01.01 ~ 23.01.01</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><strong>등급쿠폰 실버 3%</strong></td>
+            <td>2022.01.01 ~ 23.01.01</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><strong>등급쿠폰 브론즈 2%</strong></td>
+            <td>2022.01.01 ~ 23.01.01</td>
+            <td>3</td>
+        </tr>
+        <tr class="DJ_couponTest visible">
+            <td><strong>이벤트쿠폰 100%</strong></td>
+            <td>2022.01.01 ~ 23.01.01</td>
+            <td class="DJ_couponTestNum">0</td>
+        </tr>
+    </table>
+    <div class="DJ_couponInput">
+        <input class="DJ_CouponText" type="text" placeholder="임시쿠폰 'EVENTCOUPON' ">
+        <button class="DJ_CouponInputBtn">쿠폰등록</button>
+    </div>
+    <p class="DJ_InputError Error">존재하지 않는 쿠폰번호입니다.</pc>
+
+</body>
+
+</html>

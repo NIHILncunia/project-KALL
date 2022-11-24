@@ -1,0 +1,146 @@
+main h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333333;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: left;
+  color: var(--black-3);
+}
+
+main div#withdrawal {
+  width: 600px;
+  margin: 0 auto;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  word-break: break-all;
+}
+
+div.withdrawal-req {
+  margin-bottom: 10px;
+}
+
+#req_list {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid var(--c-point);
+  position: relative;
+  user-select: none;
+}
+
+#req_list::after {
+  content: '\f078';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  color: var(--black-3);
+  cursor: pointer;
+}
+
+div.select-body {
+  font-size: 1.2rem;
+  border: 2px solid var(--c-point);
+  border-top: none;
+  user-select: none;
+}
+
+div.close+div.select-body {
+  display: none;
+}
+
+div.open+div.select-body {
+  display: block;
+}
+
+div.select-item {
+  background-color: #ebf3ff;
+  padding: 10px;
+  color: var(--black-3);
+  cursor: pointer;
+}
+
+div.select-item:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
+}
+
+div.req-input {
+  margin-bottom: 10px;
+}
+
+div.req-input input {
+  all: unset;
+  padding: 10px;
+  color: var(--black-3);
+  display: block;
+  background-color: var(--white-f9);
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+div.req-input input:focus {
+  border-bottom: 2px solid var(--c-point-h);
+}
+
+div.req-input.hidden {
+  display: none;
+}
+
+div.req-button button,
+div.pass-check-button button {
+  all: unset;
+  padding: 20px 10px;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+div.req-button button:hover,
+div.pass-check-button button:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
+}
+
+div.withdrawal-check {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.withdrawal-check.hidden {
+  display: none;
+}
+
+div.withdrawal-check div {
+  display: flex;
+}
+
+div.withdrawal-check div input {
+  all: unset;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  background-color: var(--white-f9);
+  flex: 1;
+}
+
+div.withdrawal-check div label {
+  flex: 0 0 150px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

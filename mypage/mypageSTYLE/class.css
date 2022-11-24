@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 700px;
+    text-align: center;
+    margin: 10px;
+}
+
+.DJ_ClassBox {
+    width: 700px;
+    box-sizing: border-box;
+}
+
+.DJ_ClassBox h3 {
+    margin: 10px;
+}
+
+/* 공통레이아웃 */
+.DJ_highClass,.DJ_rowClassBox{
+    border: solid 10px #acdcff;
+    box-sizing: border-box;
+}
+
+/* 다이아등급 레이아웃 */
+.DJ_highClass {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* 브 실 골 플 레이아웃 */
+.DJ_rowClass {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.DJ_rowClassBox {
+    width: 345px;
+}

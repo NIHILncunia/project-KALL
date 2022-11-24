@@ -144,3 +144,7 @@ nav.navi_left {
 .navi_left a:hover {
   font-weight: 900;
 }
+
+.DJ_naviHidden {
+  display: none;
+}
