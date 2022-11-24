@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/wishList.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
+  <script defer src="./wishList_JS/wishList.js"></script>
+  <script src="https://kit.fontawesome.com/f52a64922c.js" crossorigin="anonymous"></script>
+  <title>WISH LIST</title>
+</head>
+
+<!-- TODO 회원탈퇴 추가 예정 -->
+<!-- TODO 찜한 상품 목록 관리 추가 예정 -->
+
+<body>
+  <header>
+    <h1 class="title-logo">
+      <span>KALL</span>
+      <a href="../index.html">
+        <img src="../images/kall-logo.png" alt="KALL 로고">
+      </a>
+    </h1>
+
+    <nav>
+      <ul class="main-nav">
+        <li>
+          <a href="../product/">주문제작</a>
+        </li>
+        <li>
+          <a href="../design/">디자인</a>
+        </li>
+        <li>
+          <a href="../etc/">ETC</a>
+        </li>
+        <li>
+          <a href="../community/guide/">커뮤니티</a>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="search" name="keyword" placeholder="검색어를 입력하세요">
+    <ul class="user-menu">
+      <li>
+        <a href="../sighin/" title="로그인">
+          <span class="visually-hidden">로그아웃</span>
+          <i class="fas fa-lock-open"></i>
+        </a>
+      </li>
+      <li>
+        <a href="../sighup/" title="회원가입">
+          <span class="visually-hidden">마이페이지</span>
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li>
+        <a href="../cart/" title="장바구니">
+          <span class="visually-hidden">장바구니</span>
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <!-- mypage_main -->
+  <main class="DJ_DvAdressMain">
+    <!-- 좌측네비게이터 -->
+    <nav class="navi_left">
+      <ul>PROFILE
+        <li><a href="../infochange/index.html">개인정보변경</a></li>
+        <li><a href="../withdrawal/withdrawal.js">회원탈퇴</a></li>
+        <li><a href="../mypage/deliveryAdress.html">배송지변경</a></li>
+      </ul>
+      <ul>ORDER
+        <li><a href="../orderStatus/orderStatus.html">주문내역</a></li>
+        <li><a href="../orderStatus/orderStatusDv.html">배송내역</a></li>
+        <li><a href="../orderStatus/orderStatusCmp.html">완료내역</a></li>
+      </ul>
+      <ul>BOARD
+        <li><a href="../reviewQa/review.html">후기게시글</a></li>
+        <li><a href="../reviewQa/QA.html">문의게시글</a></li>
+      </ul>
+      <span><a href="./index.html">WiSH LIST</a></span>
+    </nav>
+    <!-- 좌측네비게이터 -->
+
+    <section>
+      <h2>WISHLIST</h2>
+      <div class="DJ_mainContainer">
+        <span>위시리스트에 담겨있는 상품은 1개월 후 자동 삭제됩니다.</span>
+        <ul class="DJ_wish_column">
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/design/design1.png" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">티아라 케이크</a></li>
+              <li class="DJ_price">35,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/product/product1.jpg" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">러블리 하트 케이크</a></li>
+              <li class="DJ_price">40,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/design/design2.jpg" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">로투스 케이크</a></li>
+              <li class="DJ_price">30,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/product/product2.png" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">빈티지 메리 체크 케이크</a></li>
+              <li class="DJ_price">36,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/product/product1.jpg" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">러블리 하트 케이크</a></li>
+              <li class="DJ_price">40,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/design/design1.png" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">티아라 케이크</a></li>
+              <li class="DJ_price">35,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/product/product2.png" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">빈티지 메리 체크 케이크</a></li>
+              <li class="DJ_price">36,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+
+          <li class="DJ_wish_row">
+            <a href="">
+              <img src="../images/cake/design/design2.jpg" alt="">
+            </a>
+            <ul>
+              <li class="DJ_prdName"><a href="">로투스 케이크</a></li>
+              <li class="DJ_price">30,000원</li>
+              <li class="DJ_icon"><i class="fa-solid fa-heart "></i></li>
+            </ul>
+          </li>
+
+
+        </ul>
+        <div class="DJ_ChangeNbBtn"><button>1</button></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="links">
+      <a href="../agreement/">이용약관</a>
+      <span>|</span><a href="../privacy">개인정보처리방침</a>
+      <span>|</span><a href="../community/guide/">고객센터</a>
+    </div>
+    <address class="site-address">
+      <p>
+        <small>
+          안내전화: 1588-9780
+          <span>|</span> 상호 : KALL
+        </small>
+      </p>
+    </address>
+    <div class="site-info">
+      <p>
+        <small>
+          사업장소재지 : 경기 성남시 분당구 돌마로 46 (광천빌딩 5층)
+        </small>
+      </p>
+      <p>
+        <small>
+          사업자등록번호 : 214-86-26812
+          <span>|</span> 대표이사: 김상곤
+        </small>
+      </p>
+      <p>
+        <small>
+          COPYRIGHT <i class="far fa-copyright"></i> KALL. ALL RIGHTS RESERVED.
+        </small>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
