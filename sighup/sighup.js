@@ -81,3 +81,18 @@ pw.addEventListener('input', function (e) {
     }
   });
 });
+
+// ==================== 주소찾기 ====================
+const postal_code_search = document.querySelector(".postal-code-search");
+
+postal_code_search.addEventListener('click', function () {
+  var width = 500;
+  var height = 600;
+  new daum.Postcode({
+    width: width,
+    height: height
+  }).open({
+    left: (window.screen.width / 2) - (width / 2),
+    top: (window.screen.height / 2) - (height / 2)
+  });
+})

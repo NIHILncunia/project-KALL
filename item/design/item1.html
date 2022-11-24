@@ -14,6 +14,9 @@
 
   <title>티아라 케이크 | KALL</title>
 
+  <script defer src="./design.js"></script>
+  <script defer src="./recommended.js"></script>
+
   <style>
     .detail_info {
       text-align: center;
@@ -144,13 +147,13 @@
           <div class="select radio item-color">
             <p>크기</p>
             <input type="radio" name="size" id="size1" value="white" hidden>
-            <label for="size1">1호</label>
+            <label for="size1" clasName="size">1호</label>
 
             <input type="radio" name="size" id="size2" value="red" hidden>
-            <label for="size2">2호</label>
+            <label for="size2" clasName="size">2호</label>
 
             <input type="radio" name="size" id="size3" value="blueberry" hidden>
-            <label for="size3">3호</label>
+            <label for="size3" clasName="size">3호</label>
           </div>
 
           <div class="select more-request">
@@ -162,6 +165,7 @@
             <button>선택 완료</button>
           </div>
 
+          <p class="seleted-item">선택된 상품 총 <span>0</span>개</p>
           <div class="items"></div>
 
           <div class="buttons">
@@ -172,113 +176,7 @@
       </div>
 
       <h3>다른 상품 추천</h3>
-      <div class="other-items">
-        <div class="item">
-          <div class="image">
-            <a href="#">
-              <img src="../../images/cake/design/design2.jpg" alt="로투스 케이크">
-            </a>
-          </div>
-          <div class="info">
-            <h4>
-              <a href="#">로투스 케이크</a>
-            </h4>
-            <p class="price">30,000원</p>
-            <p class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">(4.5)</span>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="image">
-            <a href="#">
-              <img src="../../images/cake/design/design3.jpg" alt="오레오 쇼콜라 갸또 케이크">
-            </a>
-          </div>
-          <div class="info">
-            <h4>
-              <a href="#">오레오 쇼콜라 갸또 케이크</a>
-            </h4>
-            <p class="price">30,000원</p>
-            <p class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">(4.5)</span>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="image">
-            <a href="#">
-              <img src="../../images/cake/design/design5.jpg" alt="헤이즐넛 로쉐 케이크">
-            </a>
-          </div>
-          <div class="info">
-            <h4>
-              <a href="#">헤이즐넛 로쉐 케이크</a>
-            </h4>
-            <p class="price">32,000원</p>
-            <p class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">(4.5)</span>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="image">
-            <a href="#">
-              <img src="../../images/cake/design/design6.png" alt="브라운 베어 케이크">
-            </a>
-          </div>
-          <div class="info">
-            <h4>
-              <a href="#">브라운 베어 케이크</a>
-            </h4>
-            <p class="price">30,000원</p>
-            <p class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">(4.5)</span>
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="image">
-            <a href="#">
-              <img src="../../images/cake/design/design8.jpg" alt="데이지 케이크">
-            </a>
-          </div>
-          <div class="info">
-            <h4>
-              <a href="#">데이지 케이크</a>
-            </h4>
-            <p class="price">26,000원</p>
-            <p class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <span class="rating-number">(4.5)</span>
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="other-items"></div>
 
       <div class="item-info">
         <section id="details">
@@ -430,9 +328,9 @@
                 배송도 빠르게왔고 내용도 안찌그러지게 고정 잘되서 왔어요~! 색감이 살짝 다르긴했지만 완전 만족스럽구용 선물받은 사람도 좋아했습니다~~ 다음에 또 이용할게요~
               </div>
             </details>
-            <div class="review-buttons">
+            <!-- <div class="review-buttons">
               <button>후기남기기</button>
-            </div>
+            </div> -->
           </div>
         </section>
         <section id="questions">

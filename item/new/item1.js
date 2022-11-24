@@ -11,7 +11,7 @@ const request = document.querySelector('.select.more-request > input');
 
 const button = document.querySelector('.option-complete > button');
 
-const seleteditemnum = document.querySelector('.seleted-item');
+const seleteditemnum = document.querySelector('.seleted-item > span');
 
 const items = document.querySelector('.items');
 const selectdItem = document.querySelector('.item');
@@ -48,7 +48,7 @@ button.addEventListener('click', function () {
 
   items.appendChild(item);
 
-  seleteditemnum.textContent = `선택된 상품 총 ${items.children.length}개 `;
+  seleteditemnum.textContent = items.children.length;
 })
 
 const data = [
