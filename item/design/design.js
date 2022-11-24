@@ -5,6 +5,7 @@ let cake = document.querySelector('.right-header > h2'),
   request = document.getElementById('more-request'),
   select = document.querySelector('.option-complete > button'),
   itemsList = document.getElementsByClassName('items');
+const seleted_item = document.
 
 
 let textContent = '';
