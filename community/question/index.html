@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../../styles/sc.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../../images/kall-logo.ico" type="image/x-icon">
+  <script defer src="./question.js"></script>
 
   <title>자주 묻는 질문 | KALL</title>
 
@@ -75,61 +76,135 @@
       <section>
         <h3>자주 묻는 질문</h3>
 
-        <input type="radio" name="guide" id="guide1">
-        <label for="guide1">배송일과 배송시간을 지정할 수 있나요?</label>
-        <p>
-          <strong>Q</strong><br><br>
-          배송일과 배송시간을 지정할 수 있나요?
-          <br><br><br>
+        <table id="QAList">
+          <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3">
+          </colgroup>
 
-          <strong>A</strong> <br><br>
-          제품 주문 시 배송일과 배송시간을 지정하실 수 있습니다.<br><br>
-          배송일은 지정한 배달 방식에 따라 당일 ~ 최대 3일 내로 도착합니다.
-          <br>
-          배송시간은 지역 및 당일 교통 상황에 따라 더 빠르거나 늦어질 수 있습니다.
-          <br><br>
-          다만, 주문제작의 경우 당일배송은 불가하며, 배송일의 경우 여유있게 <strong> 필요일 하루 전 </strong>수령으로 지정해주세요.
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>분류</th>
+              <th>내용</th>
+            </tr>
+          </thead>
 
-        </p>
+          <tbody id="toggle_container">
+            <tr class="toggle_Q">
+              <td>4</td>
+              <td>배송/결제</td>
+              <td class="QA_content">
+                <span class="QA_q_title">
+                  배송일과 배송시간을 지정할 수 있나요?
+                </span>
+              </td>
+            </tr>
 
-        <input type="radio" name="guide" id="guide2">
-        <label for="guide2">레터링 문구는 몇 글자까지 가능한가요?</label>
-        <p>
-          <strong>Q</strong><br><br>
-          레터링 문구는 몇 글자까지 가능한가요?
-          <br><br><br>
+            <tr class="toggle_A">
+              <td colspan="3" class="QA_q_a">
+                <div class="QA_q_content">
+                  <strong>
+                    배송일과 배송시간을 지정할 수 있나요?
+                  </strong>
+                </div>
+                <div class="QA_a_content">
+                  <p>
+                    <strong>제품 주문 시 배송일과 배송시간을 지정하실 수 있습니다.</strong>
+                    <br><br>
+                    배송일은 지정한 배달 방식에 따라 당일 ~ 최대 3일 내로 도착합니다.
+                    <br>
+                    배송시간은 지역 및 당일 교통 상황에 따라 더 빠르거나 늦어질 수 있습니다.
+                    <br><br>
+                    다만, 주문제작의 경우 당일배송은 불가하며, 배송일의 경우 여유있게 <strong> 필요일 하루 전 </strong>수령으로 지정해주세요.
+                  </p>
+                </div>
+              </td>
+            </tr>
 
-          <strong>A</strong> <br><br>
-          <strong>한글 12글자/영어 15글자 이내</strong> 로 가능합니다.<br><br>
-        </p>
+            <tr class="toggle_Q">
+              <td>3</td>
+              <td>기타</td>
+              <td class="QA_content">
+                <span class="QA_q_title">
+                  레터링 문구는 몇 글자까지 가능한가요?
+                </span>
+              </td>
+            </tr>
 
-        <input type="radio" name="guide" id="guide3">
-        <label for="guide3">케이크 보관은 몇일까지 가능한가요?</label>
-        <p>
-          <strong>Q</strong><br><br>
-          케이크 보관은 몇일까지 가능한가요?
-          <br><br><br>
+            <tr class="toggle_A">
+              <td colspan="3" class="QA_q_a">
+                <div class="QA_q_content">
+                  <strong>
+                    레터링 문구는 몇 글자까지 가능한가요?
+                  </strong>
+                </div>
+                <div class="QA_a_content">
+                  <p>
+                    <strong>한글 12글자/영어 15글자 이내</strong> 로 가능합니다.<br>
+                  </p>
+                </div>
+              </td>
+            </tr>
 
-          <strong>A</strong> <br><br>
-          케이크를 수령한뒤, 가급적 바로 섭취 해주시는게 가장 맛있게 드실 수 있습니다. <br> <br>
-          필요일 이전에 수령하신 경우에는 냉장 보관을 해주시고 1 ~ 2일정도는 섭취하시는데 문제는 없습니다. <br>
-          (맛이 떨어질 수 있으니, 수령후 바로 섭취하시는 것을 추천드립니다.)
-        </p>
+            <tr class="toggle_Q">
+              <td>2</td>
+              <td>기타</td>
+              <td class="QA_content">
+                <span class="QA_q_title">
+                  케이크 보관은 몇일까지 가능한가요?
+                </span>
+              </td>
+            </tr>
 
-        <input type="radio" name="guide" id="guide4">
-        <label for="guide4">배송 대신 매장 픽업 가능한가요?</label>
-        <p>
-          <strong>Q</strong><br><br>
-          배송 대신 매장 픽업 가능한가요?
-          <br><br><br>
+            <tr class="toggle_A">
+              <td colspan="3" class="QA_q_a">
+                <div class="QA_q_content">
+                  <strong>
+                    케이크 보관은 몇일까지 가능한가요?
+                  </strong>
+                </div>
+                <div class="QA_a_content">
+                  <p>
+                    <strong>케이크를 수령한뒤, 가급적 바로 섭취 해주시는게 가장 맛있게 드실 수 있습니다.</strong> <br> <br>
+                    필요일 이전에 수령하신 경우에는 냉장 보관을 해주시고 1 ~ 2일정도는 섭취하시는데 문제는 없습니다.
+                    (맛이 떨어질 수 있으니, 수령후 바로 섭취하시는 것을 추천드립니다.)
+                  </p>
+                </div>
+              </td>
+            </tr>
 
-          <strong>A</strong> <br><br>
-          네 가능합니다.
-          매장픽업은 주중, 주말, 공휴일 모두 픽업 가능하시며, 1:1 문의에 방문 날짜와 시간을 작성해 주시면 1일내로 예약 확정 문자를 남겨드리고 있습니다. 배송비 차액건은 케이크 픽업시 결제취소 후
-          재결제 도와드리고있습니다.<br><br>
-          혹, 예약 확정 문자를 받지 못하신 경우 문자 또는 1:1 문의글을 남겨주시면 답변드리겠습니다.
-        </p>
+            <tr class="toggle_Q">
+              <td>1</td>
+              <td>결제/배송</td>
+              <td class="QA_content">
+                <span class="QA_q_title">
+                  배송 대신 매장 픽업 가능한가요?
+                </span>
+              </td>
+            </tr>
 
+            <tr class="toggle_A">
+              <td colspan="3" class="QA_q_a">
+                <div class="QA_q_content">
+                  <strong>
+                    배송 대신 매장 픽업 가능한가요?
+                  </strong>
+                </div>
+                <div class="QA_a_content">
+                  <p>
+                    네 가능합니다.
+                    매장픽업은 주중, 주말, 공휴일 모두 픽업 가능하시며, 1:1 문의에 방문 날짜와 시간을 작성해 주시면 1일내로 예약 확정 문자를 남겨드리고 있습니다. 배송비 차액건은 케이크
+                    픽업시 결제취소 후
+                    재결제 도와드리고있습니다.<br><br>
+                    혹, 예약 확정 문자를 받지 못하신 경우 문자 또는 1:1 문의글을 남겨주시면 답변드리겠습니다.
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <aside>
         <ul>
