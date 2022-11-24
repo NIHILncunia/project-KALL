@@ -4,8 +4,14 @@ const name = document.querySelector('.right-header > h2');
 const heart = document.querySelector('.heart');
 
 const sheet = document.getElementsByName('sheet');
+const sheetLabel = document.querySelectorAll('.sheet');
+
 const shape = document.getElementsByName('shape');
+const shapeLabel = document.querySelectorAll('.shape');
+
 const cream = document.getElementsByName('color');
+const creamLabel = document.querySelectorAll('.color');
+
 const lettering = document.querySelector('.select.item-lettering > input');
 const request = document.querySelector('.select.more-request > input');
 
@@ -20,27 +26,34 @@ button.addEventListener('click', function () {
 
   const [selectedsheet] = [...sheet]
     .filter((item) => item.checked);
+  const [sheetLabelText] = [...sheetLabel].filter((item) => item.htmlFor === selectedsheet.id);
 
   const [selectedshape] = [...shape]
     .filter((item) => item.checked);
+  const [shapeLabelText] = [...shapeLabel].filter((item) => item.htmlFor === selectedshape.id);
 
   const [selectedcream] = [...cream]
     .filter((item) => item.checked);
+  const [creamLabelText] = [...creamLabel].filter((item) => item.htmlFor === selectedcream.id);
 
   const letteringValue = lettering.value;
   const requestValue = request.value;
 
   let item = document.createElement('div');
 
+  const sheetText = sheetLabelText.textContent;
+  const shapeText = shapeLabelText.textContent;
+  const creamText = creamLabelText.textContent;
+
   if (selectedsheet && selectedshape && selectedcream) {
     if (letteringValue) {
-      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value},${letteringValue}`);
+      item.textContent = (`${name.textContent} - ${sheetText}, ${shapeText}, ${creamText}, ${letteringValue}`);
     } else if (requestValue) {
-      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value},${requestValue}`);
+      item.textContent = (`${name.textContent} - ${sheetText}, ${shapeText}, ${creamText},${requestValue}`);
     } else if (letteringValue && requestValue) {
-      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value},${letteringValue},${requestValue}`);
+      item.textContent = (`${name.textContent} - ${sheetText}, ${shapeText}, ${creamText}, ${letteringValue}, ${requestValue}`);
     } else {
-      item.textContent = (`${name.textContent} - ${selectedsheet.value}, ${selectedshape.value}, ${selectedcream.value}`);
+      item.textContent = (`${name.textContent} - ${sheetText}, ${shapeText}, ${creamText}`);
     }
   } else {
     return;

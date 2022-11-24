@@ -26,10 +26,10 @@ function updateValue(e) {
 }
 
 function updateList() {
-  const tmpArray = [...cakesize].filter((item) => item.checked)[0];
+  const [tmpArray] = [...cakesize].filter((item) => item.checked);
 
   if (tmpArray) {
-    const sizeName = [...sizeString].filter((item) => item.htmlFor === tmpArray.id)[0];
+    const [sizeName] = [...sizeString].filter((item) => item.htmlFor === tmpArray.id);
 
     const itemDiv = document.createElement('div');
 
