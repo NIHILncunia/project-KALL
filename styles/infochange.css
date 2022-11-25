@@ -258,7 +258,7 @@ fieldset {
   cursor: pointer;
 }
 
-#infochage:hover {
+#infochange:hover {
   background-color: var(--c-point-h);
   color: var(--white-f);
 }
