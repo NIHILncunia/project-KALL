@@ -32,30 +32,9 @@ var markerOptions = {
 }
 
 var marker = new naver.maps.Marker(markerOptions);
-// var markers = [];
-// var infowindows = [];
-
-// var KALL = new naver.maps.LatLng(37.349733, 127.106970);
-
-// markers.push(new naver.map.Marker({
-//     map: map,
-//     position: KALL
-// }));
 
 
-// infowindows.push(new naver.maps.InfoWindow({
-//     content: [
-//         '<div id="customoverlay">'+
-//             '<span class="title_map">'+
-//                 'KALL'+
-//             '</span>'+
-//         '</div>'
-//     ]
-// }));
-
-// infowindows[0].open(map, markers[0]);
-
-naver.maps.Event.addListener(markerOptions, 'click', function (e) {
+naver.maps.Event.addListener(marker, 'click', function (e) {
   var overlay = e.overlay, // marker
     position = overlay.getPosition(),
     url = 'http://map.naver.com/index.nhn?enc=utf8&level=2&lng=' + position.lng() + '&lat=' + position.lat() + '&pinTitle=KALL&pinType=SITE';
