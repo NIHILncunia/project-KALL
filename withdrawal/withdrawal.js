@@ -33,15 +33,8 @@ select_body.addEventListener('click', function (e) {
 
   req_list.dataset.value = value;
 
-  switch (value) {
-    case 'res1':
-    case 'res2':
-    case 'res3':
-    case 'res4':
-      return;
-    case 'res5':
-      req_input.classList.remove('hidden');
-      break;
+  if (value === 'res5') {
+    req_input.classList.remove('hidden');
   }
 });
 
