@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="./style/review&Qa.css">
+  <link rel="stylesheet" href="../styles/review.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
   <!-- <script defer src="./profile.js/profile.js"></script> -->
   <script src="https://kit.fontawesome.com/f52a64922c.js" crossorigin="anonymous"></script>
-  <script defer src="./js/profile.js"></script>
+  <script defer src="./js/review.js"></script>
 
   <title>후기내역</title>
 </head>
@@ -73,7 +73,6 @@
   <main class="mypage_main">
     <!-- 좌측네비게이터 -->
     <nav class="navi_left">
-
       <ul>PROFILE
         <li><a href="../infochange/index.html">개인정보변경</a></li>
         <li><a href="../withdrawal/index.html">회원탈퇴</a></li>
@@ -106,18 +105,14 @@
 
           <thead>
             <tr>
-              <th>선택</th>
-              <th>케이크</th>
+              <th colspan="2">상품리스트</th>
               <th>평점</th>
             </tr>
           </thead>
 
           <tbody id="toggle_container">
             <tr class="toggle_Q">
-              <td>
-                <input type="checkbox">
-              </td>
-              <td>팔레트 케이크(4.5)</td>
+              <td colspan="2">러블리 러브케이크</td>
               <td class="REVIEW_content">
                 <span class="REVIEW_q_title">
                   <div>
@@ -126,6 +121,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
+                    (4.5)
                   </div>
                 </span>
               </td>
@@ -134,19 +130,24 @@
             <tr class="toggle_A">
               <td class="REVIEW_q_a">
                 <div>
-                  <img class="comment" src="../../images/cake/review/text_review.png" alt="리뷰">
+                  <img class="comment" src="../images/cake/product/product4.png" alt="리뷰">
                 </div>
               </td>
-              <td colspan="2" class="REVIEW_q_a">
+              <td class="REVIEW_q_a">
                 <div class="REVIEW_a_content">
                   잘받았습니다.이쁘게생일상차려기분이좋네요^^번창하세요~~
+                </div>
+              </td>
+              <td>
+                <div class="buttonBox">
+                  <button class="editBtn">수정</button>
+                  <button class="deleteBtn">삭제</button>
                 </div>
               </td>
             </tr>
 
             <tr class="toggle_Q">
-              <td><input type="checkbox"></td>
-              <td>미니 하트 초(4.5)</td>
+              <td colspan="2">미니 하트 초</td>
               <td class="REVIEW_content">
                 <span class="REVIEW_q_title">
                   <i class="fas fa-star"></i>
@@ -154,6 +155,7 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star-half-alt"></i>
+                  (4.5)
                 </span>
               </td>
             </tr>
@@ -161,21 +163,25 @@
             <tr class="toggle_A">
               <td class="REVIEW_q_a">
                 <div>
-                  <img class="comment" src="../../images/cake/review/text_review.png" alt="리뷰">
+                  <img class="comment" src="../images/cake/etc/etc1.jpg" alt="리뷰">
                 </div>
               </td>
-              <td colspan="2" class="REVIEW_q_a">
+              <td class="REVIEW_q_a">
                 <div class="REVIEW_a_content">
                   귀엽고 예뻐요 5개 들어있어요..
                 </div>
               </td>
+              <td>
+                <div class="buttonBox">
+                  <button class="editBtn">수정</button>
+                  <button class="deleteBtn">삭제</button>
+                </div>
+
+              </td>
             </tr>
 
             <tr class="toggle_Q">
-              <td>
-                <input type="checkbox">
-              </td>
-              <td>러블리 하트 케이크(4.5)</td>
+              <td colspan="2">러블리 하트 케이크</td>
               <td class="REVIEW_content">
                 <span class="REVIEW_q_title">
                   <div>
@@ -184,6 +190,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
+                    (4.5)
                   </div>
                 </span>
               </td>
@@ -192,12 +199,18 @@
             <tr class="toggle_A">
               <td class="REVIEW_q_a">
                 <div>
-                  <img class="comment" src="../../images/cake/review/text_review.png" alt="리뷰">
+                  <img class="comment" src="../images/cake/product/product1.jpg" alt="리뷰">
                 </div>
               </td>
-              <td colspan="2" class="REVIEW_q_a">
+              <td class="REVIEW_q_a">
                 <div class="REVIEW_a_content">
                   퀄리티가 짱이에요 다음기념일때도 재규매해야겟어용
+                </div>
+              </td>
+              <td>
+                <div class="buttonBox">
+                  <button class="editBtn">수정</button>
+                  <button class="deleteBtn">삭제</button>
                 </div>
               </td>
             </tr>

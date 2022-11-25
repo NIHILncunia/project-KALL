@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/layout.css">
-  <link rel="stylesheet" href="./style/review&Qa.css">
+  <link rel="stylesheet" href="../styles/Qa.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="shortcut icon" href="../images/kall-logo.ico" type="image/x-icon">
   <!-- <script defer src="./profile.js/profile.js"></script> -->
   <script src="https://kit.fontawesome.com/f52a64922c.js" crossorigin="anonymous"></script>
-  <script defer src="./js/profile.js"></script>
+  <script defer src="./js/Qa.js"></script>
 
   <title>문의내역</title>
 </head>
@@ -104,7 +104,7 @@
 
           <thead>
             <tr>
-              <th>선택</th>
+              <th>번호</th>
               <th>분류</th>
               <th>내용</th>
             </tr>
@@ -112,7 +112,7 @@
 
           <tbody id="toggle_container">
             <tr class="toggle_Q">
-              <td><input type="checkbox"></td>
+              <td>1</td>
               <td>배송/결제</td>
               <td class="QA_content">
                 <span class="QA_q_title">
@@ -131,19 +131,20 @@
                 <div class="QA_a_content">
                   <p>
                     <strong>제품 주문 시 배송일과 배송시간을 지정하실 수 있습니다.</strong>
-                    <br><br>
+                    <br>
                     배송일은 지정한 배달 방식에 따라 당일 ~ 최대 3일 내로 도착합니다.
                     <br>
                     배송시간은 지역 및 당일 교통 상황에 따라 더 빠르거나 늦어질 수 있습니다.
-                    <br><br>
+                    <br>
                     다만, 주문제작의 경우 당일배송은 불가하며, 배송일의 경우 여유있게 <strong> 필요일 하루 전 </strong>수령으로 지정해주세요.
                   </p>
+                  <button class="DJ_deleteBtn">삭제</button>
                 </div>
               </td>
             </tr>
 
             <tr class="toggle_Q">
-              <td><input type="checkbox"></td>
+              <td>2</td>
               <td>기타</td>
               <td class="QA_content">
                 <span class="QA_q_title">
@@ -163,9 +164,62 @@
                   <p>
                     <strong>한글 12글자/영어 15글자 이내</strong> 로 가능합니다.<br>
                   </p>
+                  <button class="DJ_deleteBtn">삭제</button>
                 </div>
               </td>
             </tr>
+
+            <tr class="toggle_Q">
+              <td>3</td>
+              <td>기타</td>
+              <td class="QA_content">
+                <span class="QA_q_title">
+                  레터링 문구는 몇 글자까지 가능한가요?
+                </span>
+              </td>
+            </tr>
+
+            <tr class="toggle_A">
+              <td colspan="3" class="QA_q_a">
+                <div class="QA_q_content">
+                  <strong>
+                    레터링 문구는 몇 글자까지 가능한가요?
+                  </strong>
+                </div>
+                <div class="QA_a_content">
+                  <p>
+                    <strong>한글 12글자/영어 15글자 이내</strong> 로 가능합니다.<br>
+                  </p>
+                  <button class="DJ_deleteBtn">삭제</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="toggle_Q">
+              <td>4</td>
+              <td>환불관련</td>
+              <td class="QA_content">
+                <span class="QA_q_title">
+                  환불도 가능한가요
+                </span>
+              </td>
+            </tr>
+
+            <tr class="toggle_A">
+              <td colspan="3" class="QA_q_a">
+                <div class="QA_q_content">
+                  <strong>
+                    환불도 가능한가요
+                  </strong>
+                </div>
+                <div class="QA_a_content">
+                  <p>
+                    <strong>제품 특성상 제품의 불량이 있는 경우 환불이 가능하나, 고객님의 단순 변심으로는 불가합니다</strong>.
+                  </p>
+                  <button class="DJ_deleteBtn">삭제</button>
+                </div>
+              </td>
+            </tr>
+
           </tbody>
         </table>
       </section>
